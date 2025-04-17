@@ -1,4 +1,4 @@
-# Revision QA 📚🧠
+# ExamBuddy 📚🧠
 
 A lightweight React-based revision web app designed for university exam preparation. Built for subjects including:
 
