@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 import path from 'path'
 
 export default defineConfig({
-    base: '/<your-repo-name>/', // <-- REQUIRED for GitHub Pages
+    base: '/ExamBuddy/', // <-- REQUIRED for GitHub Pages
     plugins: [
         react(),
         tailwindcss()
