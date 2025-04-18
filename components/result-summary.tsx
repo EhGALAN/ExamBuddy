@@ -3,7 +3,6 @@ import {Button} from "@/components/ui/button"
 import type {Subject, Question} from "@/lib/types"
 import {checkAnswer} from "@/lib/utils.ts";
 import MardownRender from "@/components/ui/MardownRender.tsx";
-import type React from "react";
 
 interface ResultSummaryProps {
     subject: Subject

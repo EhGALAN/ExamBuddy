@@ -35,30 +35,30 @@ export const checkAnswer = (question: Question, answer: any): boolean => {
     }
 };
 
-function getCurrentLineNumber(): number | undefined {
-    const err = new Error();
-    const stackLines = err.stack?.split('\n');
-    if (!stackLines || stackLines.length < 3) return;
-
-    const match = stackLines[2].match(/:(\d+):\d+\)?$/);
-    if (match) {
-        return parseInt(match[1], 10);
-    }
-}
-
-function getFileInfoFromError(): { pathname?: string } {
-    const err = new Error();
-    const stackLines = err.stack?.split('\n');
-
-    if (!stackLines || stackLines.length < 3) return {};
-
-    const match = stackLines[2].match(/\(?(.+):\d+:\d+\)?$/);
-    if (!match) return {};
-
-    const urlPath = match[1].slice(1, -1);
-
-    return {pathname: urlPath.split("/ExamBuddy/").at(-1)?.split?.("?").at(0)};
-}
+// function getCurrentLineNumber(): number | undefined {
+//     const err = new Error();
+//     const stackLines = err.stack?.split('\n');
+//     if (!stackLines || stackLines.length < 3) return;
+//
+//     const match = stackLines[2].match(/:(\d+):\d+\)?$/);
+//     if (match) {
+//         return parseInt(match[1], 10);
+//     }
+// }
+//
+// function getFileInfoFromError(): { pathname?: string } {
+//     const err = new Error();
+//     const stackLines = err.stack?.split('\n');
+//
+//     if (!stackLines || stackLines.length < 3) return {};
+//
+//     const match = stackLines[2].match(/\(?(.+):\d+:\d+\)?$/);
+//     if (!match) return {};
+//
+//     const urlPath = match[1].slice(1, -1);
+//
+//     return {pathname: urlPath.split("/ExamBuddy/").at(-1)?.split?.("?").at(0)};
+// }
 
 export function generateGitHubUrlAuto(): string {
     const repoUrl = "https://github.com/EhGALAN/ExamBuddy";
