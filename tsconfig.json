@@ -8,6 +8,7 @@
       "path": "./tsconfig.node.json"
     }
   ],
+  "sourceMap": true,
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
