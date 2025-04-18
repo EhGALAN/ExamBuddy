@@ -245,9 +245,9 @@ export const questions: (n: number) => Question[] = (n: number) => {
 
         // Generated question for P(A|B) with Bayes Theorem
         (() => {
-            const P_B_given_A = Math.random(); // P(positive | cancer)
-            const P_A = Math.random(); // P(cancer)
-            const P_B_given_not_A = Math.random(); // P(positive | not cancer)
+            const P_B_given_A = parseFloat(Math.random().toFixed(2)); // P(positive | cancer)
+            const P_A = parseFloat(Math.random().toFixed(2)); // P(cancer)
+            const P_B_given_not_A = parseFloat(Math.random().toFixed(2)); // P(positive | not cancer)
             const P_not_A = 1 - P_A; // P(not cancer)
             const P_B = P_B_given_A * P_A + P_B_given_not_A * P_not_A; // P(positive)
             const P_A_given_B = (P_B_given_A * P_A) / P_B;

@@ -62,15 +62,15 @@ function getFileInfoFromError(): { pathname?: string } {
 
 export function generateGitHubUrlAuto(): string {
     const repoUrl = "https://github.com/EhGALAN/ExamBuddy";
-
-    const { pathname } = getFileInfoFromError();
-
-    const commitHash = __COMMIT_HASH__;
-    const lineNumber = getCurrentLineNumber();
-
-    let url = `${repoUrl}/blob/${commitHash}/${pathname}`;
-    if (lineNumber !== undefined) {
-        url += `#L${lineNumber}`;
-    }
-    return url;
+    // does not work in production
+    // const { pathname } = getFileInfoFromError();
+    //
+    // const commitHash = __COMMIT_HASH__;
+    // const lineNumber = getCurrentLineNumber();
+    //
+    // let url = `${repoUrl}/blob/${commitHash}/${pathname}`;
+    // if (lineNumber !== undefined) {
+    //     url += `#L${lineNumber}`;
+    // }
+    return repoUrl;
 }
