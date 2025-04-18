@@ -9,6 +9,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { getQuizQuestions } from "@/lib/quiz-data"
 import { saveQuizProgress, saveQuizAttempt } from "@/lib/storage-utils"
 import type { Question, QuizProgress, Subject, QuizAttempt } from "@/lib/types"
+import {checkAnswer} from "@/lib/utils.ts";
 
 type View = "quiz" | "history"
 
@@ -96,20 +97,6 @@ export default function QuizMasterHub() {
     }
   }
 
-  const checkAnswer = (question: Question, answer: any): boolean => {
-    switch (question.type) {
-      case "multiple-choice":
-        return answer === question.correctAnswer
-      case "true-false":
-        return answer === question.correctAnswer
-      case "generated":
-        // For generated questions, we might need custom validation logic
-        return Math.abs(Number(answer) - Number(question.correctAnswer)) < 0.01
-      default:
-        return false
-    }
-  }
-
   const restartQuiz = () => {
     setCurrentQuestionIndex(0)
     setUserAnswers({})
@@ -153,14 +140,16 @@ export default function QuizMasterHub() {
 
   if (quizCompleted) {
     return (
-      <ResultSummary
-        subject={subject}
-        score={score}
-        totalQuestions={questions.length}
-        onRestart={restartQuiz}
-        onNewSubject={selectNewSubject}
-        onViewHistory={viewHistory}
-      />
+        <ResultSummary
+            subject={subject}
+            score={score}
+            totalQuestions={questions.length}
+            questions={questions}
+            userAnswers={userAnswers}
+            onRestart={restartQuiz}
+            onNewSubject={selectNewSubject}
+            onViewHistory={viewHistory}
+        />
     )
   }
 
