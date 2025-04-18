@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main goal of an ensemble of classifiers?",
@@ -17,6 +19,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Introduction
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In an ensemble, it is crucial that each classifier has a high predictive accuracy.",
@@ -24,6 +27,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: The Need for Diverse Classifiers
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "If 3 classifiers each have an error rate of 0.4 and make entirely correlated errors, what is the error rate of the ensemble?",
@@ -32,6 +36,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Example of the importance of diversity of classifiers (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "If 3 classifiers each have an error rate of 0.4 and make entirely uncorrelated errors, what is the error rate of the ensemble?",
@@ -40,6 +45,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Example of the importance of diversity of classifiers (3)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a variance reduction method for ensembles?",
@@ -48,6 +54,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Variance reduction methods: bagging
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Bagging is particularly useful when the base classification algorithm is stable.",
@@ -55,6 +62,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Bagging (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What does the term 'bagging' stand for in the context of ensembles?",
@@ -68,6 +76,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Bagging (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a bias reduction method for ensembles?",
@@ -76,6 +85,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Bias reduction methods: boosting (AdaBoost)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In boosting, base classifiers can be very simple as long as they are better than random guessing.",
@@ -83,6 +93,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Boosting
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the primary goal of gradient boosting?",
@@ -96,6 +107,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Gradient Boosting
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a type of gradient boosting algorithm?",
@@ -104,6 +116,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Gradient Boosting
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In gradient boosting, the base predictors are averaged using weights alpha.",
@@ -111,6 +124,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Gradient Boosting
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the derivative of the Mean Squared Error (MSE) with respect to the prediction?",
@@ -124,6 +138,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Gradient Boosting - Example
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Random forests are tailored for decision tree classifiers.",
@@ -131,6 +146,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Random Forests (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a random decision in random forests?",
@@ -144,6 +160,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Random Forests (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In boosting, overfitting is possible when more trees are added.",
@@ -151,6 +168,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Boosting
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a benefit of ensembles?",
@@ -164,6 +182,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Summary / Conclusions
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Ensembles are easier for users to interpret than single classification models.",
@@ -171,6 +190,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Summary / Conclusions
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a drawback of ensembles?",
@@ -184,6 +204,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Summary / Conclusions
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In boosting, examples that are harder to classify are assigned larger weights.",
@@ -191,6 +212,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation: Boosting
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a stable classification algorithm?",

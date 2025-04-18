@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the probability that 2 out of 3 experts will misidentify the same scan if each expert has a 10% false negative rate?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Ensemble Learning
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Ensemble learning involves training a single model on a dataset.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Ensemble Learning
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a technique used in ensemble learning?",
@@ -30,6 +34,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Ensemble Learning
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Hard voting in ensemble learning uses the predicted class probabilities from each model.",
@@ -38,6 +43,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide VotingClassifier
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary difference between hard voting and soft voting in ensemble learning?",
@@ -47,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide VotingClassifier
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Bagging (Bootstrap Aggregating) involves training multiple models on the same dataset.",
@@ -55,6 +62,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bagging
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the purpose of Out-of-Bag (OOB) evaluation in bagging?",
@@ -64,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Out-of-Bag Evaluation
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Random Forests are a type of ensemble learning that combines multiple Decision Trees.",
@@ -72,6 +81,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Random Forest
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a hyperparameter of a Random Forest?",
@@ -81,6 +91,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Random Forest
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Extra-Trees (Extremely Randomised Trees) introduce randomness in both feature selection and threshold selection.",
@@ -89,6 +100,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Extra-Trees
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary goal of feature importance in Random Forests?",
@@ -98,6 +110,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Feature Importance
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "AdaBoost is a boosting algorithm that assigns higher weights to correctly classified samples in subsequent iterations.",
@@ -106,6 +119,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide AdaBoost
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key difference between AdaBoost and Gradient Boosting?",
@@ -115,6 +129,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Gradient Boosting
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "XGBoost is a gradient boosting algorithm that is particularly effective for handling sparse data.",
@@ -123,6 +138,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide XGBoost
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary advantage of using stacking in ensemble learning?",
@@ -132,6 +148,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Stacking
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In Random Forests, each tree is trained on a random subset of both samples and features.",
@@ -140,6 +157,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Random Forest
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a benefit of using ensemble learning?",
@@ -149,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Ensemble Learning
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In bagging, the training sets are created by sampling with replacement from the original dataset.",
@@ -157,6 +176,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bagging
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the purpose of the learning rate in Gradient Boosting?",
@@ -166,6 +186,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Gradient Boosting
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In AdaBoost, the weights of correctly classified samples are increased in subsequent iterations.",
@@ -174,6 +195,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide AdaBoost
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key feature of XGBoost?",
@@ -183,6 +205,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide XGBoost
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Stacking involves training a meta-learner on the predictions of base models.",

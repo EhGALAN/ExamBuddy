@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the expected value of a fair six-sided die roll?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Expectation / Mean
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The sample variance formula with unknown mean uses the denominator \(N-1\).",
@@ -20,6 +23,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Variance
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a component of the Mean Squared Error (MSE) decomposition?",
@@ -28,6 +32,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bias-Variance Decomposition
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "A model with low bias and high variance tends to overfit the training data.",
@@ -35,6 +40,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bias-Variance Trade-off
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What does the term 'inductive bias' refer to in machine learning?",
@@ -43,6 +49,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Inductive Bias
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The No-Free Lunch Theorem states that there is no single algorithm that works best for all problems.",
@@ -50,6 +57,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide No-Free Lunch Theorem
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for the sample mean $\\bar{x}$?",
@@ -63,6 +71,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Sample mean
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The expected value of a function $f(X)$ is calculated as $E[f(X)] = \\sum_{i=1}^{O} p(x_{i}) f(x_{i})$.",
@@ -70,6 +79,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Expectation / Mean (cont.)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the population variance formula?",
@@ -83,6 +93,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Population variance
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In regression, the goal is to predict quantitative variables like Salary.",
@@ -90,6 +101,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Regression
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What does the notation $f_S(x)$ represent in the context of machine learning?",
@@ -103,6 +115,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Notation
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The Mean Squared Error (MSE) is minimized by averaging the squared differences between true and predicted values.",
@@ -110,6 +123,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Mean Squared Error
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for the Mean Squared Error (MSE) averaged over all training sets $S$?",
@@ -123,6 +137,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Mean Squared Error-Averaged over $S$
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The bias-variance decomposition helps in understanding the sources of error in a machine learning model.",
@@ -130,6 +145,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bias-Variance Decomposition
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What does the term $\\bar{y}_x$ represent in the bias-variance decomposition?",
@@ -143,6 +159,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bias-Variance Decomposition
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Noise in data cannot be reduced by machine learning algorithms.",
@@ -150,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bias-Variance Decomposition (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for the expected prediction of the models at point $x$?",
@@ -163,6 +181,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bias-Variance Decomposition (3)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "A model with high bias and low variance tends to underfit the data.",
@@ -170,6 +189,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bias-Variance Trade-off
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a source of inductive bias?",
@@ -178,6 +198,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Sources of Inductive Bias
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Inductive bias is necessary for machine learning algorithms to generalize to new data.",
@@ -185,6 +206,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Definition of Inductive Bias
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is an example of representation bias in rule induction algorithms?",
@@ -193,6 +215,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Example of Representation Bias
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The No-Free Lunch Theorem implies that no algorithm can succeed on all tasks.",
@@ -200,6 +223,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide One of the No-Free Lunch Theorems
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main conclusion of the No-Free Lunch Theorem?",
@@ -208,6 +232,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide No-Free Lunch Theorem
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The approximation error in the bias-variance decomposition cannot be reduced by more data.",
@@ -215,6 +240,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bias-Variance Trade-off → Inductive Bias
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the definition of inductive bias?",
@@ -223,6 +249,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Definition of Inductive Bias (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Inductive bias is necessary for any induction algorithm to generalize to new data.",
@@ -230,6 +257,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Definition of Inductive Bias (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is an example of search bias in decision trees?",
@@ -238,6 +266,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Example of bias in a simple statistical experiment
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "A bias favoring one outcome in a statistical experiment can be good or bad depending on the context.",
@@ -245,6 +274,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Example of bias in a simple statistical experiment
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What does the No-Free Lunch Theorem state about learning algorithms?",
@@ -253,6 +283,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide No-Free Lunch Theorem (NFLT)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The No-Free Lunch Theorem implies that prior knowledge is necessary to avoid failures in learning tasks.",
@@ -260,6 +291,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Implications of NFLT
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the approximation error in the error decomposition?",
@@ -268,6 +300,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Error Decomposition
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The estimation error in the error decomposition is related to the sample size and variance.",
@@ -275,6 +308,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Error Decomposition
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of decision tree pruning?",
@@ -283,6 +317,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Decision tree pruning as a bias (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "A sophisticated pruning strategy in decision trees can help discover the correct tree more often than a naïve strategy.",
@@ -290,6 +325,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Decision tree pruning as a bias (3)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is a possible reason for decision tree algorithms obtaining high classification accuracy in credit data sets?",
@@ -298,6 +334,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Statlog Project
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Every classification algorithm has an inductive bias.",
@@ -305,6 +342,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Summary / Conclusions
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is a good approach to select the best classification algorithm for a given data set?",
@@ -312,4 +350,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             correctAnswer: "Try several classification algorithms and use the best result",
         }, // citation slide Summary / Conclusions
     ];
-}
+};

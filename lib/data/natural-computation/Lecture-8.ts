@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following algorithms is inspired by the foraging behaviour of honey bees?",
@@ -12,6 +14,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Swarm Intelligence
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the Artificial Bee Colony (ABC) algorithm, scout bees search for new unknown food sources.",
@@ -19,6 +22,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Foraging Behaviour of Honey Bees
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the role of employed bees in the ABC algorithm?",
@@ -27,6 +31,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Foraging Behaviour of Honey Bees
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "The ABC algorithm was developed by D. Karaboga in 2005.",
@@ -34,6 +39,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Artificial Bee Colony (ABC) Algorithm
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which phase in the ABC algorithm involves generating a new solution in the neighbourhood of a current solution?",
@@ -42,6 +48,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Artificial Bee Colony (ABC) Algorithm
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the ABC algorithm, the trial counter measures the number of times a food source cannot be improved.",
@@ -49,6 +56,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Artificial Bee Colony (ABC) Algorithm
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the purpose of the onlooker bee phase in the ABC algorithm?",
@@ -57,6 +65,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Onlooker bee phase
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the ABC algorithm, the scout bee phase occurs in every iteration.",
@@ -64,6 +73,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Scout bee phase
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What happens when the trial counter of a food source exceeds the limit in the ABC algorithm?",
@@ -72,6 +82,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Scout bee phase
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "The ABC algorithm maintains a balance between exploitation and exploration when searching for the global optimal solution.",
@@ -79,6 +90,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Search process in ABC algorithm
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a step in the main loop of the ABC algorithm?",
@@ -87,6 +99,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Pseudocode of ABC algorithm
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the ABC algorithm, the limit parameter controls the production rate of scout bees.",
@@ -94,6 +107,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Scout bee phase
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the role of the dancing area in the foraging behaviour of honey bees?",
@@ -102,6 +116,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Foraging Behaviour of Honey Bees
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the ABC algorithm, the best food source found so far is recorded before performing the scout bee phase.",
@@ -109,6 +124,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Scout bee phase
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is used to evaluate the profitability of a food source in the ABC algorithm?",
@@ -117,6 +133,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Artificial Bee Colony (ABC) Algorithm
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the ABC algorithm, the employed bee phase involves applying greedy selection between the current solution and its newly generated neighbour solution.",
@@ -124,6 +141,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Employed bee phase
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the purpose of the probability calculation in the onlooker bee phase of the ABC algorithm?",
@@ -132,6 +150,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Onlooker bee phase
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the ABC algorithm, the scout bee phase can remove the best food source from the population.",
@@ -139,6 +158,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Scout bee phase
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a user-specified parameter in the ABC algorithm?",
@@ -147,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Scout bee phase
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "The ABC algorithm starts with a random initial population of candidate solutions.",
@@ -154,6 +175,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Search process in ABC algorithm
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the role of the nectar area in the foraging behaviour of honey bees?",
@@ -161,4 +183,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             correctAnswer: "It is where nectar is collected.",
         }, // citation slide Foraging Behaviour of Honey Bees
     ];
-}
+};

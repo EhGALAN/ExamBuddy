@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term 'SVM' stand for in the context of machine learning?",
@@ -12,6 +14,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Support Vector Machines"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Support Vector Machines (SVM) can be used for both classification and regression tasks.",
@@ -19,6 +22,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Support Vector Machines"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a predictor attribute in the given classification example?",
@@ -27,6 +31,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification-Example"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In SVM, the target function $f(x)$ maps input features $x$ to the target label $y$.",
@@ -34,6 +39,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification and Learning from Data"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT an example of a machine learning model?",
@@ -42,6 +48,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification and Learning from Data"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In a 2D space, a separating hyperplane in SVM is represented by the equation $ w_1 x^{(1)} + w_2 x^{(2)} + b = 0 $.",
@@ -49,6 +56,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Data in 2D and a Separating Hyperplane"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $ b $ represent in the equation of a separating hyperplane?",
@@ -57,6 +65,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Data in 2D and a Separating Hyperplane"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The classification objective in SVM is to ensure that $ y_i \\times (\\langle w, x_i \\rangle + b) \\geq 0 $.",
@@ -64,6 +73,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification using Separating Hyperplanes"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a factor that influences the choice of a hyperplane in SVM?",
@@ -72,6 +82,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Which Hyperplane to Choose?"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The margin in SVM is defined as the distance between the hyperplane and the closest data points.",
@@ -79,6 +90,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Concept of the Margin"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $ r $ represent in the context of the margin in SVM?",
@@ -87,6 +99,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Concept of the Margin"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In Hard Margin SVM, the value of the predictor $ \\langle w, x \\rangle + b $ is set to 1 at the closest example.",
@@ -94,6 +107,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Hard Margin SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a component of the optimization problem in Hard Margin SVM?",
@@ -102,6 +116,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Hard Margin SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Soft Margin SVM introduces slack variables $ \\\\xi_i $ to handle cases where data is not linearly separable.",
@@ -109,6 +124,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Soft Margin SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $ \\\\xi_i $ represent in Soft Margin SVM?",
@@ -117,6 +133,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Soft Margin SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In Soft Margin SVM, a high value of $ C $ implies a smaller margin.",
@@ -124,6 +141,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Soft Margin SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a loss function used in SVM?",
@@ -132,6 +150,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Hinge loss"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The hinge loss function is zero when $ t \\geq 1 $.",
@@ -139,6 +158,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Hinge loss"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $ t $ represent in the context of the hinge loss?",
@@ -147,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Hinge loss"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The dual formulation of SVM involves optimizing the variables $ \\alpha $.",
@@ -154,6 +175,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Dual SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a constraint in the dual formulation of SVM?",
@@ -162,6 +184,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Dual SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The kernel trick in SVM allows for non-linear decision boundaries without explicitly computing the feature map $ \\phi(x) $.",
@@ -169,6 +192,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a type of kernel in SVM?",
@@ -177,6 +201,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The RBF kernel is an example of a non-linear kernel in SVM.",
@@ -184,6 +209,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $ \\sigma $ represent in the RBF kernel?",
@@ -192,6 +218,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In the dual formulation of SVM, the decision rule involves computing the dot product $ \\langle \\phi(x_i), \\phi(x_j) \\rangle $.",
@@ -199,6 +226,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification with Kernels"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a step in the decision rule for classification with kernels in SVM?",
@@ -207,6 +235,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification with Kernels"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a correct interpretation of the equation $ w_1 x^{(1)} + w_2 x^{(2)} + b = 0 $?",
@@ -215,6 +244,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Data in 2D and a Separating Hyperplane"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The weight vector $ w $ in SVM is perpendicular to the separating hyperplane.",
@@ -222,6 +252,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Data in 2D and a Separating Hyperplane"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $ \\langle w, x \\rangle $ represent in SVM?",
@@ -230,6 +261,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification using Separating Hyperplanes"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The classification objective in SVM is to maximize the margin between the classes.",
@@ -237,6 +269,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Concept of the Margin"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a component of the optimization problem in Soft Margin SVM?",
@@ -245,6 +278,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Soft Margin SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The hinge loss function is used to measure the error in SVM.",
@@ -252,6 +286,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Hinge loss"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a correct interpretation of the hinge loss function?",
@@ -260,6 +295,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Hinge loss"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The dual formulation of SVM involves optimizing the variables $ \\alpha $ subject to certain constraints.",
@@ -267,6 +303,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Dual SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a constraint in the dual formulation of SVM?",
@@ -275,6 +312,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Dual SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The kernel trick in SVM allows for non-linear decision boundaries without explicitly computing the feature map $ \\phi(x) $.",
@@ -282,6 +320,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a type of kernel in SVM?",
@@ -290,6 +329,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The RBF kernel is an example of a non-linear kernel in SVM.",
@@ -297,6 +337,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $ \\sigma $ represent in the RBF kernel?",
@@ -305,6 +346,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In the dual formulation of SVM, the decision rule involves computing the dot product $ \\langle \\phi(x_i), \\phi(x_j) \\rangle $.",
@@ -312,6 +354,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification with Kernels"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a step in the decision rule for classification with kernels in SVM?",
@@ -320,6 +363,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification with Kernels"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a correct interpretation of the equation $ w_1 x^{(1)} + w_2 x^{(2)} + b = 0 $?",
@@ -328,6 +372,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Data in 2D and a Separating Hyperplane"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The weight vector $ w $ in SVM is perpendicular to the separating hyperplane.",
@@ -335,6 +380,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Data in 2D and a Separating Hyperplane"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $ \\langle w, x \\rangle $ represent in SVM?",
@@ -343,6 +389,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification using Separating Hyperplanes"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The classification objective in SVM is to maximize the margin between the classes.",
@@ -350,6 +397,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Concept of the Margin"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a component of the optimization problem in Soft Margin SVM?",
@@ -358,6 +406,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Soft Margin SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The hinge loss function is used to measure the error in SVM.",
@@ -365,6 +414,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Hinge loss"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a correct interpretation of the hinge loss function?",
@@ -373,6 +423,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Hinge loss"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The dual formulation of SVM involves optimizing the variables $ \\alpha $ subject to certain constraints.",
@@ -380,6 +431,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Dual SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a constraint in the dual formulation of SVM?",
@@ -388,6 +440,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Dual SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The kernel trick in SVM allows for non-linear decision boundaries without explicitly computing the feature map $ \\phi(x) $.",
@@ -395,6 +448,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a type of kernel in SVM?",
@@ -403,6 +457,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The RBF kernel is an example of a non-linear kernel in SVM.",
@@ -410,6 +465,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $ \\sigma $ represent in the RBF kernel?",
@@ -418,6 +474,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In the dual formulation of SVM, the decision rule involves computing the dot product $ \\langle \\phi(x_i), \\phi(x_j) \\rangle $.",
@@ -425,6 +482,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification with Kernels"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a step in the decision rule for classification with kernels in SVM?",
@@ -433,6 +491,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification with Kernels"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the equation of a separating hyperplane $w_1 x^{(1)} + w_2 x^{(2)} + b = 0$, what does $w_1$ represent?",
@@ -442,6 +501,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Data in 2D and a Separating Hyperplane"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $b$ represent in the equation of a separating hyperplane?",
@@ -451,6 +511,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Data in 2D and a Separating Hyperplane"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the role of the weight vector $w$ in the context of a separating hyperplane?",
@@ -460,6 +521,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Data in 2D and a Separating Hyperplane"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $\\langle w, x \\rangle$ represent in the context of a separating hyperplane?",
@@ -469,6 +531,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification using Separating Hyperplanes"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the classification objective in SVM?",
@@ -478,6 +541,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Concept of the Margin"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $r$ represent in the context of the margin in SVM?",
@@ -487,6 +551,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Concept of the Margin"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In Hard Margin SVM, what is the value of the predictor $\\langle w, x \\rangle + b$ at the closest example?",
@@ -496,6 +561,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Hard Margin SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the role of the regularization parameter $C$ in Soft Margin SVM?",
@@ -505,6 +571,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Soft Margin SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $\\xi_i$ represent in Soft Margin SVM?",
@@ -514,6 +581,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Soft Margin SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the hinge loss function used for in SVM?",
@@ -523,6 +591,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Hinge loss"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the value of the hinge loss function when $t \\geq 1$?",
@@ -532,6 +601,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Hinge loss"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $t$ represent in the hinge loss function?",
@@ -541,6 +611,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Hinge loss"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the dual formulation of SVM used for?",
@@ -550,6 +621,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Dual SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the role of the variables $\\alpha$ in the dual formulation of SVM?",
@@ -559,6 +631,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Dual SVM"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the kernel trick in SVM used for?",
@@ -568,6 +641,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the RBF kernel represent in SVM?",
@@ -577,6 +651,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term $\\sigma$ represent in the RBF kernel?",
@@ -586,6 +661,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Kernels-Implicit Feature Maps"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the dual formulation of SVM, what does the decision rule involve?",
@@ -594,4 +670,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             explanation: "In the dual formulation of SVM, the decision rule involves using the kernel trick to compute the dot product in the feature space.",
         }, // citation slide "Classification with Kernels"
     ];
-}
+};

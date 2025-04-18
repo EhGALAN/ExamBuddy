@@ -1,10 +1,12 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main goal of data mining?",
@@ -14,6 +16,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Knowledge Discovery in Databases (KDD) involves identifying valid, novel, and potentially useful patterns in data.",
@@ -22,6 +25,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a major data mining task?",
@@ -31,6 +35,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Association rules always imply causation.",
@@ -39,6 +44,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the confidence of an association rule?",
@@ -48,6 +54,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In the knowledge discovery process, data preparation is a crucial step.",
@@ -56,6 +63,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is an example of a classification problem?",
@@ -65,6 +73,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "A single minimum support is always sufficient for discovering association rules.",
@@ -73,6 +82,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the support of an association rule?",
@@ -82,6 +92,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Clustering is a type of supervised learning.",
@@ -90,6 +101,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is an example of clustering?",
@@ -99,6 +111,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The Baltimore stockbroker scam is a legitimate way to evaluate prediction accuracy.",
@@ -107,6 +120,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main difference between information extraction and knowledge discovery?",
@@ -116,6 +130,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Machine learning is a subset of data mining.",
@@ -124,6 +139,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a phase in the association rule algorithm?",
@@ -133,6 +149,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "A hierarchy of items can help in pruning non-interesting association rules.",
@@ -141,6 +158,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main goal of clustering?",
@@ -150,6 +168,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In the knowledge discovery process, knowledge validation is unnecessary.",
@@ -158,6 +177,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is an example of a prediction problem?",
@@ -167,6 +187,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The support of an association rule is always greater than its confidence.",
@@ -175,6 +196,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         },
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main goal of data preparation in the knowledge discovery process?",
@@ -188,6 +210,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const support = Math.round((transactionsWithXY / totalTransactions) * 100) / 100; // Rounded to 2 decimal places
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: `Calculate the support for an association rule where the total number of transactions is ${totalTransactions} and the number of transactions containing both X and Y is ${transactionsWithXY}. (Answer rounded to 2 decimal places)`,
@@ -206,6 +229,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const confidence = Math.round((transactionsWithXY / transactionsWithX) * 100) / 100; // Rounded to 2 decimal places
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: `Calculate the confidence for an association rule where the number of transactions containing X is ${transactionsWithX} and the number of transactions containing both X and Y is ${transactionsWithXY}. (Answer rounded to 2 decimal places)`,

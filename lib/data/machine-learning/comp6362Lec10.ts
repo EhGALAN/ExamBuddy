@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the key assumption of the Naive Bayes Classifier?",
@@ -18,6 +20,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "What is Naive Bayes Classifier"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Bayes' Theorem is used to calculate the probability of an event given the probability of another event.",
@@ -26,6 +29,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Bayes Theorem"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a component of Bayes' Theorem?",
@@ -40,6 +44,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Bayes Theorem"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "generated",
             subject: "Machine Learning",
             text: "If a cancer test has a true positive rate of 95% and a false positive rate of 5%, and the cancer prevalence is 0.1%, what is the probability that a person who tests positive actually has cancer? (Answer rounded to 2 decimal places)",
@@ -53,6 +58,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Bayes Theorem - example"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which type of Naive Bayes Classifier is suitable for continuous data?",
@@ -67,6 +73,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Gaussian Naive Bayes"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Multinomial Naive Bayes is commonly used for text classification problems.",
@@ -75,6 +82,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Multinomial Naive Bayes"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a technique to avoid zero probability in Naive Bayes?",
@@ -89,6 +97,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Laplace Smoothing"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "K-Means is a supervised learning algorithm.",
@@ -97,6 +106,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "K-Means"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary goal of clustering in unsupervised learning?",
@@ -111,6 +121,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Clustering"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In K-Means, the algorithm is guaranteed to converge to the global optimum.",
@@ -119,6 +130,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "How does K-Means work?"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a common application of unsupervised learning?",
@@ -133,6 +145,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Types of Unsupervised Learning"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Naive Bayes Classifiers are considered good estimators of probabilities.",
@@ -141,6 +154,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Naive Bayes Classifier Notes"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a limitation of the Naive Bayes Classifier?",
@@ -155,6 +169,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Naive Bayes Classifier Notes"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In K-Means clustering, the centroids are always initialized randomly.",
@@ -163,6 +178,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "How does K-Means work?"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the purpose of Laplace Smoothing in Naive Bayes?",
@@ -177,6 +193,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Laplace Smoothing"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "K-Means clustering can be used for both hard and soft clustering.",
@@ -185,6 +202,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "K-Means - soft clustering"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a type of unsupervised learning?",
@@ -199,6 +217,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Types of Unsupervised Learning"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Naive Bayes Classifiers perform well when the independence assumption holds.",
@@ -207,6 +226,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Naive Bayes Classifier Notes"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a common issue with Naive Bayes Classifiers?",
@@ -221,6 +241,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Laplace Smoothing"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "K-Means clustering requires the number of clusters (k) to be specified in advance.",
@@ -229,6 +250,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "K-Means"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key advantage of Naive Bayes Classifiers?",
@@ -243,6 +265,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Naive Bayes Classifier Notes"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In K-Means, the centroids are updated iteratively until the algorithm converges.",
@@ -250,4 +273,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             explanation: "K-Means iteratively updates the centroids and reassigns instances to clusters until convergence.",
         }, // citation slide "How does K-Means work?"
     ];
-}
+};

@@ -1,10 +1,12 @@
 import {factorialize} from "../../utils";
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a common representation used in genetic algorithms for optimizing the order of events?",
@@ -14,6 +16,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Permutation representation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Ordinary crossover operators can generate valid genotypes in permutation representation without modification.",
@@ -22,6 +25,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Ordinary variation operators fail in permutation representation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a commonly used mutation operator in permutation representation?",
@@ -31,6 +35,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation operators for permutation representation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the size of the search space for the Travelling Salesman Problem (TSP) with 9 cities and symmetric distances?",
@@ -40,6 +45,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Travelling salesman problem (TSP)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the 8-queens problem, using permutation representation reduces the search space to 8! possible solutions.",
@@ -48,6 +54,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Eight-queens problem"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a selection operator used in genetic algorithms?",
@@ -57,6 +64,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Design a genetic algorithm to solve TSP"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "generated",
             subject: "Natural Computation",
             text: "Calculate the size of the search space for the 5-queens problem using permutation representation.",
@@ -68,6 +76,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Exercise 2"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a fitness function for the N-queens problem?",
@@ -77,6 +86,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Design a genetic algorithm to solve N-queens problem"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Genetic algorithms have been used to evolve virtual creatures with creative and unexpected solutions.",
@@ -85,6 +95,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Creativity and novelty in GAs"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a recombination operator used in permutation representation?",
@@ -94,6 +105,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation operators for permutation representation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the N-queens problem, the fitness value of 0 indicates a valid solution.",
@@ -102,6 +114,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Design a genetic algorithm to solve N-queens problem"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a task performed by virtual creatures evolved using genetic algorithms?",
@@ -111,6 +124,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Evolving virtual creatures with GAs"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "generated",
             subject: "Natural Computation",
             text: "Given a TSP with 7 cities and symmetric distances, calculate the size of the search space.",
@@ -122,6 +136,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Travelling salesman problem (TSP)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In permutation representation, swap mutation ensures that the genotype remains valid after mutation.",
@@ -130,6 +145,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation operators for permutation representation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a key advantage of using genetic algorithms for optimization problems?",
@@ -139,6 +155,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Creativity and novelty in GAs"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the 8-queens problem, the fitness function is the total distance of a route.",
@@ -147,6 +164,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Design a genetic algorithm to solve N-queens problem"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a task performed by virtual creatures evolved using genetic algorithms?",
@@ -158,7 +176,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         // Generated question for Swap Mutation
         (() => {
             const genotypeLength = Math.floor(Math.random() * 10) + 3; // Random length of genotype (3 to 12)
-            const genotype = Array.from({ length: genotypeLength }, (_, i) => i + 1); // Random genotype
+            const genotype = Array.from({length: genotypeLength}, (_, i) => i + 1); // Random genotype
             const swapIndices = [
                 Math.floor(Math.random() * genotypeLength),
                 Math.floor(Math.random() * genotypeLength),
@@ -170,6 +188,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             ];
             return {
                 id: `nc-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Natural Computation",
                 text: `Swap mutation is a technique where two elements in a genotype are swapped. Given the genotype [${genotype.join(", ")}], swap the elements at indices ${swapIndices[0]} and ${swapIndices[1]}. What is the resulting genotype?`,
@@ -188,6 +207,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const searchSpaceSize = factorialize(numCities - 1) / 2;
             return {
                 id: `nc-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Natural Computation",
                 text: `The Travelling Salesman Problem (TSP) involves finding the shortest route to visit a set number of cities and return to the starting point. The size of the search space for symmetric TSP with ${numCities} cities. What is the size of the search space for ${numCities} cities?`,
@@ -205,6 +225,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const searchSpaceSize = 5 * 4 * 3 * 2 * 1;
             return {
                 id: `nc-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Natural Computation",
                 text: `The 5-queens problem involves placing 5 queens on a 5x5 chessboard such that no two queens threaten each other. What is the size of the search space?`,
@@ -222,6 +243,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const searchSpaceSize = factorialize(numCities - 1) / 2;
             return {
                 id: `nc-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Natural Computation",
                 text: `The size of the search space for the Travelling Salesman Problem (TSP). What is the size of the search space for 7 cities?`,

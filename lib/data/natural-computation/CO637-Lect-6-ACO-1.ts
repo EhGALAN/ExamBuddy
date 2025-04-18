@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which type of optimisation is Ant Colony Optimisation (ACO) more suitable for?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Function Optimisation vs. Combinatorial Optimisation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In ACO, ants initially choose paths randomly.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "The 'intelligent' foraging behaviour of natural ant colonies (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the term for the indirect communication system used by ants in ACO?",
@@ -30,6 +34,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Main characteristics of natural ants used as an inspiration for artificial ants"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In ACO, the amount of pheromone deposited by an ant is proportional to the quality of the solution.",
@@ -38,6 +43,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Basic ideas of Ant Colony Optimisation (ACO) algorithms"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a characteristic of natural ants used in ACO?",
@@ -47,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Main characteristics of natural ants used as an inspiration for artificial ants"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "ACO is an exact method for finding the optimal solution.",
@@ -55,6 +62,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Exact vs. Approximate methods"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What type of method is ACO?",
@@ -64,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Exact vs. Approximate methods"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In ACO, ants construct a candidate solution incrementally by adding one component at a time.",
@@ -72,6 +81,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Very simple taxonomy of methods for optimisation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the goal of the Travelling Salesman Problem (TSP)?",
@@ -81,6 +91,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Recap - the Travelling Salesman Problem"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In ACO for TSP, pheromone values are updated globally after all ants construct their tours.",
@@ -89,6 +100,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Pheromone updating in the Ant System for the TSP"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a heuristic value used in ACO for TSP?",
@@ -98,6 +110,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "ACO for the Travelling Salesman Problem"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In ACO, the probability of moving from city i to city j is influenced by both pheromone and heuristic values.",
@@ -106,6 +119,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "ACO for the Travelling Salesman Problem"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the purpose of pheromone evaporation in ACO?",
@@ -115,6 +129,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Pheromone updating in the Ant System for the TSP"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the Ant Colony System for TSP, the parameter q_0 influences the balance between exploration and exploitation.",
@@ -123,6 +138,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Another variation of Ant System: Ant Colony System for the TSP"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the role of the heuristic function (η) in ACO?",
@@ -132,6 +148,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Main elements in the design of an ACO algorithm (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In ACO, the pheromone update rule is based on the global evaluation of the entire candidate solution.",
@@ -140,6 +157,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Main elements in the design of an ACO algorithm (2)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a key property of ACO algorithms?",
@@ -149,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "The 'intelligent' foraging behaviour of natural ant colonies (2)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In ACO, the amount of pheromone deposited on a path increases with the quality of the solution.",
@@ -157,6 +176,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Summary"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary goal of combinatorial optimisation?",
@@ -166,6 +186,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Function Optimisation vs. Combinatorial Optimisation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In ACO, ants use a probabilistic transition rule to choose the next path.",
@@ -174,6 +195,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Main elements in the design of an ACO algorithm (2)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the role of the evaporation rate (ρ) in ACO?",
@@ -183,6 +205,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Pheromone updating in the Ant System for the TSP"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In ACO, the heuristic value (η) is computed locally based on the cost of edges.",

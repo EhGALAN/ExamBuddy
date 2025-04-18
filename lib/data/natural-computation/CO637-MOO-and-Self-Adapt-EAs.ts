@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a key advantage of evolutionary algorithms in multi-objective optimization?",
@@ -18,6 +20,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Motivation for Multi-Objective Optimisation
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the weighted-sum approach for multi-objective optimization, the weights for each objective are always predefined and fixed.",
@@ -26,6 +29,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Weighted-Sum Approach
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary goal of minimizing the size of an individual in a genetic programming algorithm?",
@@ -40,6 +44,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The two objectives to be optimised by the GP algorithm for predicting CO2 emission in China
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In Pareto dominance, a solution S1 dominates solution S2 if S1 is strictly better than S2 in at least one objective and not worse in all objectives.",
@@ -48,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Pareto Dominance (2)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a drawback of the weighted-sum approach in multi-objective optimization?",
@@ -62,6 +68,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Weighted-Sum Approach
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In lexicographic optimization, the user defines a priority ordering for the objectives.",
@@ -70,6 +77,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Lexicographic Optimisation (1)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary goal of the crowded-comparison operator in NSGA-II?",
@@ -84,6 +92,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Non-Dominated Sorting GA (NSGA-II) (3)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "The hypervolume indicator measures the size of the objective space covered by the non-dominated solutions.",
@@ -92,6 +101,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Evaluating the set of non-dominated solutions produced by a multi-objective GA
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a key idea in the Non-Dominated Sorting GA (NSGA-II)?",
@@ -106,6 +116,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Non-Dominated Sorting GA (NSGA-II) (1)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In adaptive crossover, the probability of each crossover type is adjusted based on its success in improving fitness.",
@@ -114,6 +125,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Adaptive Crossover
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is a potential drawback of self-adaptive mutation?",
@@ -128,6 +140,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Issues with Self-Adaptive Approaches
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In a meta-level evolutionary algorithm, each individual represents a set of parameter settings for a base-level EA.",
@@ -136,6 +149,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Example of the use of a meta-level EA to optimise parameters of a base-level EA (1)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a key advantage of dynamic parameter optimization in evolutionary algorithms?",
@@ -150,6 +164,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Two broad approaches for EAs' parameter optimization
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In self-adaptive mutation, the mutation probability is dynamically adapted for each gene in an individual.",
@@ -158,6 +173,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Self-adaptive mutation (1)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary goal of the adaptive approach for optimizing selective pressure?",
@@ -172,6 +188,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Optimizing Selective Pressure (2)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the deterministic approach for optimizing tournament size, the value of K is increased with time.",
@@ -180,6 +197,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Optimizing Selective Pressure (1)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a drawback of using a meta-level EA to optimize parameters of a base-level EA?",
@@ -194,6 +212,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Example of the use of a meta-level EA to optimise parameters of a base-level EA (2)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In Pareto dominance, a solution is considered bad if it is dominated by at least one other solution.",
@@ -202,6 +221,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Pareto Dominance (1)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary goal of the lexicographic optimization approach?",
@@ -216,6 +236,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Lexicographic Optimisation (1)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "The crowded-comparison operator in NSGA-II selects individuals based on their rank and distance to nearest neighbors.",
@@ -224,6 +245,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Non-Dominated Sorting GA (NSGA-II) (3)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a key advantage of using evolutionary algorithms for parameter optimization?",
@@ -238,6 +260,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Two broad approaches for EAs' parameter optimization
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In self-adaptive mutation, the mutation probability is encoded in the individuals and evolves alongside the solution.",

@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary goal of Ant Colony Optimisation (ACO) algorithms?",
@@ -18,6 +20,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Recap - basic ideas of Ant Colony Optimisation (ACO) algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In ACO, the probability of an ant choosing a path is directly proportional to the amount of pheromone on that path.",
@@ -26,6 +29,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Recap - basic ideas of Ant Colony Optimisation (ACO) algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the goal of using ACO in hospital layout planning?",
@@ -40,6 +44,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide An Application of ACO in Hospital Layout (1)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the hospital layout problem, each clinic is allocated to exactly one building.",
@@ -48,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide An Application of ACO in Hospital Layout (1)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a step in the ACO algorithm for hospital layout planning?",
@@ -62,6 +68,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide An Application of ACO in Hospital Layout (4)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In the solution-construction graph for ACO, each node represents a component of a candidate solution.",
@@ -70,6 +77,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide An Application of ACO in Hospital Layout (5)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What does an ant do when constructing a path in the ACO algorithm?",
@@ -84,6 +92,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide An Application of ACO in Hospital Layout (6)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Pheromone levels in ACO are updated only after all ants have constructed their paths.",
@@ -92,6 +101,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide An Application of ACO in Hospital Layout (7)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary challenge in data network routing that makes ACO suitable?",
@@ -106,6 +116,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Applying Ant Colony Optimisation (ACO) to Data Network Routing: AntNet
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In AntNet, forward ants and backward ants share the same queues as data packets.",
@@ -114,6 +125,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The AntNet Algorithm for Data Network Routing (2)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the role of the pheromone matrix in AntNet?",
@@ -128,6 +140,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide AntNet's main data structure
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "AntNet has been shown to perform competitively with traditional routing algorithms in real-world network simulations.",
@@ -136,6 +149,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The AntNet Algorithm for Data Network Routing (3)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a key difference between ACO and Evolutionary Algorithms (EAs)?",
@@ -150,6 +164,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Comparing ACO and EAs
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "ACO algorithms are only applicable to problems with discrete variables.",
@@ -158,6 +173,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Comparing ACO and EAs
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the purpose of the heuristic function (η) in ACO?",
@@ -172,6 +188,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The AntNet Algorithm for Data Network Routing (1)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Backward ants in AntNet update the pheromone matrix based on the trip time of forward ants.",
@@ -180,6 +197,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The AntNet Algorithm for Data Network Routing (2)
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a key advantage of using ACO for data network routing?",
@@ -194,6 +212,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Applying Ant Colony Optimisation (ACO) to Data Network Routing: AntNet
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In ACO, the amount of pheromone deposited on a path is inversely proportional to the quality of the solution.",
@@ -202,6 +221,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Recap - basic ideas of Ant Colony Optimisation (ACO) algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the role of pheromone evaporation in ACO?",
@@ -221,6 +241,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const product = flow * distance;
             return {
                 id: `nc-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Natural Computation",
                 text: `If the yearly flow between two clinics is ${flow} and the distance between their allocated buildings is ${distance} units, calculate the product of flow and distance.`,
@@ -240,6 +261,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const updatedPheromoneLevel = (1 - evaporationRate) * currentPheromoneLevel;
             return {
                 id: `nc-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Natural Computation",
                 text: `If the pheromone evaporation rate (ρ) is ${evaporationRate.toFixed(2)} and the current pheromone level (τ) on a path is ${currentPheromoneLevel.toFixed(2)}, calculate the updated pheromone level after evaporation. (Answer rounded to 2 decimal places)`,
@@ -260,6 +282,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const probability = pheromoneLevel + (alpha * heuristicValue);
             return {
                 id: `nc-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Natural Computation",
                 text: `If the pheromone level (τ) for a path is ${pheromoneLevel.toFixed(2)}, the heuristic value (η) is ${heuristicValue.toFixed(2)}, and α is ${alpha.toFixed(2)}, calculate the probability of an ant choosing this path. (Answer rounded to 2 decimal places)`,
@@ -280,6 +303,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const pheromoneDeposited = pheromoneDepositRate / totalCost;
             return {
                 id: `nc-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Natural Computation",
                 text: `If the total cost of a solution constructed by an ant is ${totalCost} units and the pheromone deposit rate is ${pheromoneDepositRate.toFixed(2)}, calculate the amount of pheromone deposited on the path. (Answer rounded to 4 decimal places)`,
@@ -292,4 +316,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             };
         })(), // citation slide An Application of ACO in Hospital Layout (8)
     ];
-}
+};

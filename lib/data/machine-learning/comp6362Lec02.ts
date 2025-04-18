@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary distinction between supervised and unsupervised learning?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Types of Machine Learning"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In supervised learning, the training set includes the desired solutions, called labels.",
@@ -20,6 +23,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Supervised Learning"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is an example of a supervised learning task?",
@@ -29,6 +33,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Supervised Learning Tasks"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the goal of regression in supervised learning?",
@@ -38,6 +43,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Supervised Learning Tasks"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Unsupervised learning involves training a model with labeled data.",
@@ -45,6 +51,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Unsupervised Learning"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is an example of an unsupervised learning algorithm?",
@@ -54,6 +61,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Unsupervised Learning Algorithms"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary goal of semi-supervised learning?",
@@ -63,6 +71,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Semi-supervised Learning"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Reinforcement learning involves learning through trial-and-error in a dynamic environment.",
@@ -70,6 +79,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Reinforcement Learning"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key component of reinforcement learning?",
@@ -79,6 +89,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Reinforcement Learning"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the goal of the Q-Learning algorithm in reinforcement learning?",
@@ -88,6 +99,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Reinforcement Learning Algorithms"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Deep Q-Networks use neural networks to learn the Q function in reinforcement learning.",
@@ -95,6 +107,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Reinforcement Learning Algorithms"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a challenge in machine learning when the training data is not representative?",
@@ -104,6 +117,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Main Challenges of Machine Learning"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Feature engineering involves selecting the most useful features for a machine learning model.",
@@ -111,6 +125,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Main Challenges of Machine Learning"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is overfitting in machine learning?",
@@ -120,6 +135,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Main Challenges of Machine Learning"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In the IRIS dataset, the target variable represents the species of the iris flowers.",
@@ -127,6 +143,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Supervised Learning"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a supervised learning algorithm?",
@@ -136,6 +153,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Supervised Learning Algorithms"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Dimensionality reduction is a technique used in unsupervised learning to reduce the number of features in a dataset.",
@@ -143,6 +161,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Unsupervised Learning Algorithms"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a common application of unsupervised learning?",
@@ -152,6 +171,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Unsupervised Learning Examples"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In semi-supervised learning, label propagation is a technique used to assign labels to unlabeled data based on proximity to labeled data.",
@@ -159,10 +179,11 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Semi-supervised Learning Techniques"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Deep Learning is particularly demanding in terms of the size of the training data.",
             correctAnswer: true,
         }, // citation slide "Main Challenges of Machine Learning"
     ];
-}
+};

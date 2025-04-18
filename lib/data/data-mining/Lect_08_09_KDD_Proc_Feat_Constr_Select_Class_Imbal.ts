@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What does KDD stand for in the context of data mining?",
@@ -12,6 +14,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "A bit of terminology - Fayyad et al. (1996)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Data Mining is the only step involved in the Knowledge Discovery process.",
@@ -19,6 +22,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "A bit of terminology - Fayyad et al. (1996)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which phase of the CRISP-DM process involves understanding the business objectives?",
@@ -27,6 +31,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "The CRISP-DM Process Model for Knowledge Discovery"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The CRISP-DM process is linear and does not involve feedback to previous phases.",
@@ -34,6 +39,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "The CRISP-DM Process Model for Knowledge Discovery"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is a major data quality issue that can arise from faulty data-collection equipment?",
@@ -42,6 +48,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Major data quality issues"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Missing values in a dataset are always a result of data not being entered due to misunderstanding or lack of time.",
@@ -49,6 +56,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Major data quality issues"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which technique is used to smooth noisy data by distributing values into bins?",
@@ -57,6 +65,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Trying to reduce noise - Binning (1)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In binning, equal-depth bins ensure a constant range of values in each bin.",
@@ -68,6 +77,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const median = bin[Math.floor(bin.length / 2)];
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: "What is the median value in the bin ?",
@@ -79,6 +89,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         })(), // citation slide "Trying to reduce noise - Binning (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Binning is always beneficial for improving data quality.",
@@ -86,6 +97,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Trying to reduce noise - Binning (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What was the reason for the anomalous pattern of 5% of customers being born on the same day?",
@@ -94,6 +106,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Real-world examples of data-quality problems"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The doubling of sales on US e-commerce websites on the 30th of October 2005 was due to a marketing campaign.",
@@ -101,6 +114,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Real-world examples of data-quality problems (cont.)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which approach involves removing all records with missing values?",
@@ -109,6 +123,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Approaches for coping with missing values"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Replacing missing values with the mean of known values reduces an attribute's variability.",
@@ -116,6 +131,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Approaches for coping with missing values"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is a common cause of redundant data in integrated datasets?",
@@ -124,6 +140,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Redundant data"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Feature construction always makes it easier to interpret a model learned from transformed data.",
@@ -131,6 +148,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Feature Construction"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the goal of Principal Component Analysis (PCA)?",
@@ -139,6 +157,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Overview of Principal Component Analysis (PCA)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "PCA constructs new features that capture a small amount of variance in the data.",
@@ -146,6 +165,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Overview of Principal Component Analysis (PCA)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which approach to attribute selection is independent of the classification algorithm?",
@@ -154,6 +174,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Filter vs. Wrapper approaches (1)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The wrapper approach evaluates attribute subsets by measuring the classification accuracy of the target algorithm.",
@@ -161,6 +182,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Filter vs. Wrapper approaches (1)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is a limitation of the filter approach in attribute selection?",
@@ -169,6 +191,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Filter vs. Wrapper approaches (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The wrapper approach uses the same evaluation function as the filter approach.",
@@ -176,6 +199,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Filter vs. Wrapper approaches (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which method adds one attribute at a time to the set of selected attributes?",
@@ -184,6 +208,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Forward Sequential Attribute Selection (1)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Backward Sequential Selection starts with the full set of attributes and removes one attribute at a time.",
@@ -191,6 +216,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Backward Sequential Attribute Selection (1)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is a disadvantage of under-sampling the majority class?",
@@ -199,6 +225,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Under-sampling"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Over-sampling the minority class avoids the loss of instances associated with under-sampling.",
@@ -206,6 +233,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Over-sampling (1)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What does SMOTE stand for in the context of over-sampling?",
@@ -214,6 +242,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Over-sampling (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "SMOTE creates synthetic instances by duplicating existing minority class instances.",
@@ -221,6 +250,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Over-sampling (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the cost of misclassifying an instance of the minority class called?",
@@ -229,6 +259,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Cost-Sensitive Learning (1)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In cost-sensitive learning, FN_cost is always greater than FP_cost.",
@@ -236,6 +267,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Cost-Sensitive Learning (1)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is a reasonable default value for FN_cost if no expert knowledge is available?",
@@ -244,6 +276,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Cost-Sensitive Learning (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The ICR (Imbalanced Class Ratio) is always reduced to 1 in re-sampling techniques.",
@@ -251,6 +284,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Re-sampling techniques"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a phase of the CRISP-DM process?",
@@ -259,6 +293,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "The CRISP-DM Process Model for Knowledge Discovery"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Inconsistent data can occur due to differences in attribute value scales, such as km vs miles.",
@@ -266,6 +301,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Major data quality issues"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main challenge of imbalanced classes in classification tasks?",
@@ -274,6 +310,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "The problem of imbalanced classes"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Classification algorithms tend to under-predict the majority class and over-predict the minority class.",
@@ -281,6 +318,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "The problem of imbalanced classes"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which technique involves creating synthetic instances along the line joining a minority class instance and its nearest neighbors?",
@@ -289,6 +327,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Over-sampling (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Feature construction always improves the interpretability of a model.",
@@ -296,6 +335,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Feature Construction"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the goal of the data preparation phase in the CRISP-DM process?",
@@ -304,6 +344,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "The CRISP-DM Process Model for Knowledge Discovery"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Binning is a technique used to reduce noise in data by replacing values with more representative values.",
@@ -311,6 +352,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Trying to reduce noise - Binning (1)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The CRISP-DM process is not iterative and does not involve user interaction.",
@@ -318,6 +360,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "The CRISP-DM Process Model for Knowledge Discovery"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a common cause of missing values in a dataset?",
@@ -326,6 +369,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Coping with missing values"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Redundant data should always be removed from a dataset.",
@@ -333,6 +377,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Redundant data"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main advantage of the filter approach in attribute selection?",
@@ -341,6 +386,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Filter vs. Wrapper approaches (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The wrapper approach is always more accurate than the filter approach.",

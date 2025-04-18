@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key assumption in Naive Bayes Classifiers?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "What is Naive Bayes Classifier"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "k-NN is a model-based learning algorithm.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Model based vs Instance based Learning"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the parameter 'k' represent in k-Nearest Neighbors (k-NN)?",
@@ -30,6 +34,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "k-Nearest Neighbours - (k-NN)"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which distance metric is used by default in sklearn's k-NN implementation?",
@@ -39,6 +44,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Distance Metrics"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In k-NN, scaling features is important to ensure that features with higher values do not dominate the distance calculation.",
@@ -47,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Scaling is important"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the formula for the Euclidean Distance between two points $x$ and $y$?",
@@ -56,6 +63,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Distance Metrics"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Naive Bayes Classifiers are only suitable for binary classification problems.",
@@ -64,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "What is Naive Bayes Classifier"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which type of Naive Bayes Classifier is suitable for discrete count data, such as word counts in text classification?",
@@ -73,6 +82,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Multinomial naive Bayes"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In k-NN regression, the predicted value is the weighted average of the values from the k nearest neighbors.",
@@ -81,6 +91,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "k-NN Regression"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the formula for the Manhattan Distance between two points $x$ and $y$?",
@@ -90,6 +101,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Distance Metrics"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In Bayes' Theorem, the posterior probability is calculated as P(A|B) = P(B|A) * P(A) / P(B).",
@@ -98,6 +110,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Bayes Theorem"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a common application of Naive Bayes Classifiers?",
@@ -107,6 +120,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "What is Naive Bayes Classifier"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In k-NN, reducing the number of features through feature selection or dimensionality reduction can improve performance.",
@@ -115,6 +129,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Reducing number of features is useful"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the Minkowski Distance formula when p=1?",
@@ -124,6 +139,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Distance Metrics"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Gaussian Naive Bayes assumes that features follow a normal distribution.",
@@ -132,6 +148,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Gaussian naive Bayes"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a type of Naive Bayes Classifier?",
@@ -141,6 +158,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Which one to use"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In k-NN, the value of 'k' is always an odd number to avoid ties in classification.",
@@ -149,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "k-Nearest Neighbours - (k-NN)"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary goal of hyperparameter optimization in k-NN?",
@@ -158,6 +177,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Working with k-NN"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Bernoulli Naive Bayes is suitable for features that represent Boolean values (true/false).",
@@ -166,6 +186,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Bernoulli naive Bayes"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key advantage of Naive Bayes Classifiers?",
@@ -175,6 +196,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "What is Naive Bayes Classifier"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In k-NN, the choice of distance metric can significantly impact the performance of the algorithm.",
@@ -188,6 +210,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const manhattanDistance = point1.reduce((sum, x, i) => sum + Math.abs(x - point2[i]), 0);
             return {
                 id: `ml-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Machine Learning",
                 text: `Calculate the Manhattan Distance between the points ${JSON.stringify(point1)} and ${JSON.stringify(point2)}. (Answer is rounded to 2 decimal places)`,
@@ -207,6 +230,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const euclideanDistance = Math.sqrt(point1.reduce((sum, x, i) => sum + Math.pow(x - point2[i], 2), 0));
             return {
                 id: `ml-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Machine Learning",
                 text: `Calculate the Euclidean Distance between the points ${JSON.stringify(point1)} and ${JSON.stringify(point2)}. (Answer is rounded to 2 decimal places)`,
@@ -229,6 +253,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const P_A_given_B = (P_B_given_A * P_A) / P_B;
             return {
                 id: `ml-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Machine Learning",
                 text: `Given P(positive | cancer) = ${P_B_given_A.toFixed(2)}, P(cancer) = ${P_A.toFixed(2)}, P(positive | not cancer) = ${P_B_given_not_A.toFixed(2)}, and P(not cancer) = ${P_not_A.toFixed(2)}, calculate P(cancer | positive) using Bayes' Theorem. (Answer is rounded to 2 decimal places)`,
@@ -243,4 +268,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             };
         })(), // citation slide "Bayes Theorem - example"
     ];
-}
+};

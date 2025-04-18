@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the primary criterion used to evaluate classification models?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Evaluating Classification Models"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Maximizing classification accuracy on the training set is considered trivial.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Measuring Predictive Accuracy (1)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What does the term 'TP' stand for in the context of a confusion matrix?",
@@ -34,6 +38,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const precision = Math.round((TP / (TP + FP)) * 100) / 100; // Rounded to 2 decimal places
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: `Calculate the precision if TP=${TP} and FP=${FP}. (Answer rounded to 2 decimal places)`,
@@ -46,6 +51,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         })(), // citation slide "Measuring Predictive Accuracy (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for the F1 score?",
@@ -60,6 +66,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Measuring Predictive Accuracy (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Cross-validation is a method used to measure the predictive accuracy of a model.",
@@ -68,6 +75,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Cross-validation"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of the test set in cross-validation?",
@@ -87,6 +95,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const finalAccuracy = Math.round(((round1 + round2 + round3) / 3) * 100) / 100; // Rounded to 2 decimal places
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: `If a model achieves accuracies of ${round1}%, ${round2}%, and ${round3}% in three rounds of cross-validation, what is the final accuracy? (Answer rounded to 2 decimal places)`,
@@ -100,6 +109,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         })(), // citation slide "Cross-validation"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main advantage of K-fold cross-validation?",
@@ -114,6 +124,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Measuring Predictive Accuracy (3)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "K-fold cross-validation is computationally expensive.",
@@ -122,6 +133,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Measuring Predictive Accuracy (3)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "How is simplicity measured in decision trees?",
@@ -140,6 +152,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const totalSize = internalNodes + leafNodes;
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: `If a decision tree has ${internalNodes} internal nodes and ${leafNodes} leaf nodes, what is its total size?`,
@@ -152,6 +165,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         })(), // citation slide "Measuring Simplicity of Tree/Rules"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a subjective measure of model quality?",
@@ -161,6 +175,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Measuring Simplicity of Tree/Rules"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The smaller the size of a decision tree, the simpler it is.",
@@ -169,6 +184,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Measuring Simplicity of Tree/Rules"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of the training set in model evaluation?",
@@ -187,6 +203,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const accuracy = Math.round((correctExamples / totalExamples) * 100) / 100; // Rounded to 2 decimal places
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: `If a model correctly classifies ${correctExamples} out of ${totalExamples} examples, what is its accuracy? (Answer rounded to 2 decimal places)`,
@@ -199,6 +216,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         })(), // citation slide "Evaluating Classification Models"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for recall?",
@@ -213,6 +231,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Measuring Predictive Accuracy (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "A confusion matrix is used to evaluate the performance of a classification model.",
@@ -221,6 +240,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Measuring Predictive Accuracy (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of measuring surprisingness in data mining?",
@@ -239,6 +259,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const totalSize = rules + conditions;
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: `If a rule set has ${rules} rules and ${conditions} conditions, what is its total size?`,
@@ -251,6 +272,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         })(), // citation slide "Measuring Simplicity of Tree/Rules"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In K-fold cross-validation, each partition is used once as the test set.",

@@ -1,9 +1,12 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a method to scale features in machine learning?",
@@ -12,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide what we have covered
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Stratified sampling ensures that the test set has the same distribution of classes as the original dataset.",
@@ -19,6 +23,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide what we have covered
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which metric is used to evaluate the performance of a regression model?",
@@ -27,6 +32,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide what we have covered
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "A Decision Tree Regressor can achieve zero error on the training data.",
@@ -34,6 +40,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide trying a different model
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is overfitting in machine learning?",
@@ -42,6 +49,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide overfitting
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Regularization is a method to reduce overfitting in complex models.",
@@ -49,6 +57,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide overfitting
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a benefit of k-fold cross-validation?",
@@ -57,6 +66,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide k-fold cross validation
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In k-fold cross-validation, the choice of k is usually 5 or 10.",
@@ -64,6 +74,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide k-fold cross validation
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a common dataset for classification tasks?",
@@ -72,6 +83,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide dataset
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The MNIST Dataset contains images of handwritten digits.",
@@ -79,6 +91,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide dataset
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the objective of a binary classifier in the context of the MNIST Dataset?",
@@ -87,6 +100,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide binary classifier
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "A confusion matrix compares the predicted classes with the actual classes.",
@@ -94,6 +108,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide confusion matrix
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a performance metric for classification models?",
@@ -102,6 +117,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide performance metrics
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Precision measures the ability of the model to identify only the relevant class.",
@@ -109,6 +125,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide performance metrics
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the F1-score represent in classification models?",
@@ -117,6 +134,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide f1-score
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In a heart disease screening test, recall is more important than precision.",
@@ -124,6 +142,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide precision-recall
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a method to adjust the precision-recall trade-off in a classifier?",
@@ -132,6 +151,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide precision-recall trade-off
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "A high F1-score indicates that both precision and recall are high.",
@@ -139,6 +159,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide f1-score
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a common activation function in neural networks?",
@@ -147,6 +168,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide what is an activation function
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Decision trees are immune to overfitting.",
@@ -154,6 +176,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide how overfitting work
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary goal of feature scaling in machine learning?",
@@ -162,6 +185,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide what we have covered
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Stratified sampling is used to ensure that the test set is representative of the entire dataset.",
@@ -174,6 +198,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
 
             return {
                 id: `ml-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Machine Learning",
                 text: `Calculate the precision given the following values: True Positives (TP) = ${tp}, False Positives (FP) = ${fp}. (Answer rounded to 2 decimal places)`,
@@ -191,6 +216,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
 
             return {
                 id: `ml-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Machine Learning",
                 text: `Calculate the recall given the following values: True Positives (TP) = ${tp}, False Negatives (FN) = ${fn}. (Answer rounded to 2 decimal places)`,
@@ -208,6 +234,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
 
             return {
                 id: `ml-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Machine Learning",
                 text: `Calculate the F1-score given the following values: Precision = ${precision}, Recall = ${recall}. (Answer rounded to 2 decimal places)`,
@@ -219,4 +246,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             };
         })(), // citation slide f1-score
     ];
-}
+};

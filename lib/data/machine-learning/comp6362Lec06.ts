@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the total number of images in the MNIST dataset?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Dataset
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The MNIST dataset is already cleaned, shuffled, and split into training and testing sets.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Dataset
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the term 'True Positive (TP)' refer to in a confusion matrix?",
@@ -30,6 +34,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Confusion Matrix
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following metrics measures the ability of a model to identify only the relevant class?",
@@ -39,6 +44,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Precision
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Recall is also known as Sensitivity.",
@@ -47,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Recall (Sensitivity)
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the formula for the F1-score?",
@@ -56,6 +63,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide F1-score
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "A high F1-score indicates that both Precision and Recall are high.",
@@ -64,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide F1-score
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a tool to visualize the trade-off between Precision and Recall?",
@@ -73,6 +82,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Precision / Recall Trade-off
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Adjusting the threshold value in a classifier can influence the balance between Precision and Recall.",
@@ -81,6 +91,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Precision / Recall Trade-off
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the ROC curve plot?",
@@ -90,6 +101,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The ROC curve
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "A perfect model has an ROC AUC score of 1.",
@@ -98,6 +110,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide ROC AUC
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following classifiers can handle multiclass classification natively?",
@@ -107,6 +120,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Multiclass classification
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In the One versus One (OvO) strategy, the total number of classifiers required for N classes is N(N-1)/2.",
@@ -115,6 +129,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Multiclass classification with Binary classifiers
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the purpose of error analysis in machine learning?",
@@ -124,6 +139,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Error Analysis
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In multilabel classification, each instance can belong to multiple classes simultaneously.",
@@ -132,6 +148,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Multilabel Classification
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a strategy to handle multilabel classification?",
@@ -141,6 +158,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Multilabel Classification
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In multioutput classification, the model predicts multiple outputs for each instance.",
@@ -149,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Multioutput Classification
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is a common approach to evaluate multioutput classification models?",
@@ -158,6 +177,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Multioutput Classification
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The MNIST dataset contains images of size 28x28 pixels.",
@@ -166,6 +186,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Dataset
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a performance metric for classification models?",
@@ -175,6 +196,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Performance metrics
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "A Random Forest Classifier can estimate the probability for a sample to belong to a class.",
@@ -185,6 +207,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const numberOfClasses = Math.floor(Math.random() * 10) + 1; // Random number of classes between 1 and 10
             return {
                 id: `ml-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Machine Learning",
                 text: "Calculate the total number of classifiers required for a dataset with N classes using the One versus One (OvO) strategy. (Answer is rounded to 2 decimal places)",
@@ -195,4 +218,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             }
         })()
     ];
-}
+};

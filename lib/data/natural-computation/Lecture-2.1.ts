@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a selection operator in genetic algorithms?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selection
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In fitness proportional selection, the selection probability depends on the absolute fitness values of individuals.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selection
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is a potential issue with fitness proportional selection?",
@@ -30,6 +34,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selection
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Ranking selection prevents premature convergence by using relative fitness values.",
@@ -38,6 +43,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selection
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which selection operator is most widely used in modern genetic algorithms?",
@@ -47,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selection
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Elitism ensures that the best individual in the current generation is always preserved in the next generation.",
@@ -55,6 +62,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Elitism
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary function of selection operators in genetic algorithms?",
@@ -64,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selection
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In tournament selection, the tournament size (k) controls the selection pressure.",
@@ -72,6 +81,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selection
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a property of tournament selection?",
@@ -81,6 +91,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selection
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Ranking selection is effective in handling minimization problems.",
@@ -89,6 +100,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selection
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What happens if the tournament size (k) in tournament selection is equal to the population size (N)?",
@@ -98,6 +110,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selection
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In genetic algorithms, selection is independent of the genotype and phenotype of individuals once their fitness values are known.",
@@ -106,6 +119,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selection
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a benefit of elitism in genetic algorithms?",
@@ -115,6 +129,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Elitism
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Tournament selection is simpler to implement compared to ranking selection.",
@@ -123,6 +138,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selection
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the role of mutation in genetic algorithms?",
@@ -132,6 +148,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Components in the design of genetic algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Permutation representation is a type of individual representation in genetic algorithms.",
@@ -140,6 +157,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Components in the design of genetic algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a step in the genetic algorithm process?",
@@ -149,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Components in the design of genetic algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In genetic algorithms, the fitness function evaluates the quality of a solution.",
@@ -157,6 +176,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Components in the design of genetic algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the purpose of crossover in genetic algorithms?",
@@ -175,6 +195,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const selectionProbabilityC = rankingScoreC / 4; // Total individuals = 4
             return {
                 id: `nc-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Natural Computation",
                 text: `Calculate the selection probability for Individual C in a ranking selection scenario with the following fitness values: A=${fitnessA}, B=${fitnessB}, C=${fitnessC}, D=${fitnessD}. (Answer as a decimal)`,
@@ -211,6 +232,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
 
             return {
                 id: `nc-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Natural Computation",
                 text: `Determine the selected individuals in a tournament selection with k=${tournamentSize} for the following fitness values: A=${fitnessA}, B=${fitnessB}, C=${fitnessC}, D=${fitnessD}. (Provide the answer as a comma-separated string like this 'A, B, C')`,

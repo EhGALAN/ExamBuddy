@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary goal of Genetic Programming (GP)?",
@@ -18,6 +20,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Genetic Programming Overview"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In Genetic Programming, an individual typically represents a solution for a specific problem instance.",
@@ -26,6 +29,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Main Characteristics of GP"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a common representation of individuals in Genetic Programming?",
@@ -35,6 +39,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Genetic Programming Elements (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In a tree representation of GP, leaf nodes can only be variables.",
@@ -43,6 +48,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Genetic Programming Elements (2)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the role of the terminal set in Genetic Programming?",
@@ -57,6 +63,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Genetic Programming Elements (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Crossover in Genetic Programming involves swapping subtrees between two individuals.",
@@ -65,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation Operators (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a variation operator in Genetic Programming?",
@@ -74,6 +82,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation Operators (1-4)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In Genetic Programming, the function set must always satisfy the closure property.",
@@ -82,6 +91,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Function Set (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the purpose of 'protected division' in Genetic Programming?",
@@ -96,6 +106,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Function Set (2)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Constrained-Syntax GP modifies crossover and mutation to respect data type restrictions.",
@@ -104,6 +115,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Constrained-Syntax GP (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "In symbolic regression using GP, what is the fitness function typically based on?",
@@ -118,6 +130,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Example of GP for symbolic regression (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In symbolic regression, the target solution is known to the GP algorithm.",
@@ -126,6 +139,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Example of GP for symbolic regression (2)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the bias of expansion mutation in Genetic Programming?",
@@ -140,6 +154,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation Operators (3)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Collapse mutation in Genetic Programming tends to simplify the tree structure.",
@@ -148,6 +163,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation Operators (4)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a desirable property of a function set in Genetic Programming?",
@@ -162,6 +178,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Function Set (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In Constrained-Syntax GP, each terminal is assigned a data type.",
@@ -170,6 +187,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Constrained-Syntax GP (2)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the role of the function set in Genetic Programming?",
@@ -184,6 +202,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Genetic Programming Elements (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In Genetic Programming, individuals typically have a fixed size and shape.",
@@ -192,6 +211,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Main Characteristics of GP"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the purpose of the fitness function in Genetic Programming?",
@@ -206,6 +226,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Example of GP for symbolic regression (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In symbolic regression using GP, the maximal height of each tree is always unlimited.",
@@ -214,6 +235,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Example of GP for symbolic regression (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a common issue with the closure property in Genetic Programming?",
@@ -228,6 +250,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Function Set (2)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In Genetic Programming, the terminal set can include both variables and constants.",
@@ -235,4 +258,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             explanation: "The terminal set consists of variables and constants used in the program.",
         }, // citation slide "Genetic Programming Elements (1)"
     ];
-}
+};

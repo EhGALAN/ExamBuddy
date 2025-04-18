@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a key motivation for learning interpretable classification models?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Motivation for learning interpretable classification models
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Intrinsic interpretability is specific to each type of model.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide In-model (intrinsic) vs. Post-model (post-hoc) interpretability approaches
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which approach is mainly used for black-box models like neural networks?",
@@ -30,6 +34,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide In-model (intrinsic) vs. Post-model (post-hoc) interpretability approaches
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What does global interpretability refer to?",
@@ -39,6 +44,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Scope of the interpretability: global vs. local
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Local interpretability focuses on explaining the prediction of each testing example separately.",
@@ -47,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Scope of the interpretability: global vs. local
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is an example of an intrinsic, global interpretation of a white-box model?",
@@ -56,6 +63,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Example of intrinsic, global interpretation of a white box model: a decision tree
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "generated",
             subject: "Data Mining & Knowledge Discovery",
             text: "Convert the following decision tree path into an IF-THEN rule: Salary = 'medium', Age ≤ 25, Buy = 'yes'.",
@@ -69,6 +77,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Converting a decision tree into a rule set
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which attribute is most important for predicting 'good' or 'bad' credit in the given decision tree?",
@@ -78,6 +87,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Exercise on interpreting decision trees
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "A decision tree typically contains only a subset of the most relevant attributes.",
@@ -86,6 +96,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Interpreting decision trees: the pros
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is a limitation of decision trees in terms of attribute selection?",
@@ -95,6 +106,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Interpreting decision trees: the cons
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "IF-THEN rules can be directly extracted from a decision tree.",
@@ -103,6 +115,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Learning IF-THEN Classification Rules
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a limitation of measuring simplicity in terms of model size?",
@@ -112,6 +125,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Limitations of measuring simplicity (proxy for interpretability) in terms of model size
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The Naïve Bayes model assigns a class to a new example based on the highest product of conditional probabilities and class probabilities.",
@@ -120,6 +134,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Recap of Naïve Bayes models (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "generated",
             subject: "Data Mining & Knowledge Discovery",
             text: "Calculate the probability of the class 'no' for a new example with BT = Pos., Fever = none, using the given Naïve Bayes model.",
@@ -133,6 +148,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Recap of Naïve Bayes models (2): example
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a local, post-hoc interpretability method?",
@@ -142,6 +158,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Local, post-hoc interpretability
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "LIME learns a linear-equation model as a local explanation for the classification of a new instance.",
@@ -150,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide LIME: Local Interpretable Model-agnostic Explanations [Ribeiro et al. 2016]
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is a limitation of LIME's explanations?",
@@ -159,6 +177,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Example of LIME's explanations
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The local linear model in LIME depends on the size of the neighborhood around the instance being explained.",
@@ -167,6 +186,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The local linear model depends on the size of the neighbourhood around x
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a key challenge in learning fair classification models?",
@@ -176,6 +196,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Introduction: learning from biased data
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Bias amplification occurs when a machine learning model increases the bias present in the training data.",
@@ -184,6 +205,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Examples of Bias Amplification by Machine Learning
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is an example of bias in gender classification?",
@@ -193,6 +215,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bias in gender classification - face recognition (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The Discrimination Score (DS) measures the difference in the probability of a positive outcome between favoured and unfavoured groups.",
@@ -201,6 +224,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Unfairness Measures for the Classification Task (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a pre-processing approach to achieve fairness in classification?",
@@ -210,6 +234,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Approaches for learning fair classifiers
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Removing sensitive attributes can still lead to unfair classifications if other correlated attributes remain in the dataset.",
@@ -218,6 +243,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Removing sensitive attributes ('fairness through unawareness')
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a limitation of the 'fairness through unawareness' approach?",
@@ -227,6 +253,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Removing sensitive attributes ('fairness through unawareness')
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Data massaging involves changing the class labels of some examples to make the data fairer.",
@@ -235,6 +262,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Data Massaging Approach [Calders et al. 2009]
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which examples are promoted in the data massaging approach?",
@@ -244,6 +272,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Data Massaging Approach - Example
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Reweighing assigns weights to examples based on their sensitive attribute value and class label.",
@@ -252,6 +281,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Reweighing: Assigning Weights to Examples [Calders et al. 2009]
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a challenge in learning fair classification models?",
@@ -261,6 +291,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Summary
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "There is no single best measure of unfairness in classification tasks.",
@@ -269,6 +300,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Summary
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a post-hoc interpretability method?",
@@ -278,6 +310,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide LIME: Local Interpretable Model-agnostic Explanations [Ribeiro et al. 2016]
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Post-hoc interpretability methods are usually model-agnostic and do not access the model's inner workings.",
@@ -286,6 +319,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Local, post-hoc interpretability
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a limitation of post-hoc interpretability methods?",
@@ -295,6 +329,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Summary
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "A shorter model is not necessarily more interpretable than a larger one.",
@@ -303,6 +338,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Limitations of measuring simplicity (proxy for interpretability) in terms of model size
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a key motivation for learning interpretable classification models?",
@@ -312,6 +348,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Motivation for learning interpretable classification models
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Intrinsic interpretability is specific to each type of model, such as decision trees or Naïve Bayes.",
@@ -320,6 +357,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide In-model (intrinsic) vs. Post-model (post-hoc) interpretability approaches
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a limitation of decision trees?",
@@ -329,6 +367,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Interpreting decision trees: the cons
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "IF-THEN rules can be learned directly from data, not just extracted from decision trees.",
@@ -337,6 +376,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Learning IF-THEN Classification Rules
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a limitation of measuring simplicity in terms of model size?",
@@ -346,6 +386,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Limitations of measuring simplicity (proxy for interpretability) in terms of model size
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The Naïve Bayes model assigns a class to a new example based on the highest product of conditional probabilities and class probabilities.",
@@ -359,6 +400,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
 
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: "Calculate the probability of the class 'no' for a new example with BT = Pos., Fever = none, using the given Naïve Bayes model. (Answer to 2 decimal places)",
@@ -374,6 +416,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         })(), // citation slide Recap of Naïve Bayes models (2): example
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a local, post-hoc interpretability method?",
@@ -383,6 +426,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Local, post-hoc interpretability
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "LIME learns a linear-equation model as a local explanation for the classification of a new instance.",
@@ -391,6 +435,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide LIME: Local Interpretable Model-agnostic Explanations [Ribeiro et al. 2016]
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is a limitation of LIME's explanations?",
@@ -400,6 +445,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Example of LIME's explanations
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The local linear model in LIME depends on the size of the neighborhood around the instance being explained.",

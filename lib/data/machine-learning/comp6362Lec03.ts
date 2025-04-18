@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which tool is recommended for managing Python packages and tools in the context of Jupyter Notebooks?",
@@ -12,6 +14,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Working with Jupyter Notebooks"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Jupyter Notebooks can support kernels other than Python, such as R.",
@@ -19,6 +22,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Jupyter environment"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What type of cell in a Jupyter Notebook is used for writing and executing Python code?",
@@ -27,6 +31,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Jupyter environment"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which Python library is primarily used for handling large, multidimensional arrays and matrices?",
@@ -35,6 +40,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Python libraries"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Pandas is a Python library specifically designed for data manipulation and analysis.",
@@ -42,6 +48,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Python libraries"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary purpose of feature scaling in machine learning?",
@@ -50,6 +57,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Feature Scaling"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Min-max scaling transforms data to a range of 0 to 1.",
@@ -57,6 +65,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Feature Scaling"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a common technique for handling missing values in a dataset?",
@@ -65,6 +74,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Data Cleaning - Missing values"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "One-hot encoding is used to transform categorical data into numerical data for machine learning models.",
@@ -72,6 +82,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "One-hot Encoding"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the typical split ratio for training and testing datasets in machine learning?",
@@ -80,6 +91,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Creating a test set"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Stratified sampling is used to ensure that each subgroup in the data is proportionally represented in the training and testing sets.",
@@ -87,6 +99,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Stratified sampling"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a common performance metric for regression models?",
@@ -95,6 +108,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Performance metric"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Root Mean Square Error (RMSE) is more sensitive to outliers compared to Mean Absolute Error (MAE).",
@@ -102,6 +116,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Performance metrics"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the purpose of feature engineering in machine learning?",
@@ -110,6 +125,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Feature Engineering"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Standardization (z-score) centers data around the mean with unit variance.",
@@ -117,6 +133,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Feature Scaling"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a step in the machine learning pipeline?",
@@ -125,6 +142,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "ML Pipeline"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Correlation coefficients range from -1 to 1, where values closer to 1 indicate a strong positive correlation.",
@@ -132,6 +150,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Going deeper - correlations"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the purpose of visualizations in the context of machine learning?",
@@ -140,6 +159,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Visualisations"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Ordinal data has an intrinsic order, while categorical data does not.",
@@ -147,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Data representation"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a common library for plotting in Python?",
@@ -155,6 +176,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Python libraries"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In machine learning, outliers can significantly affect the results of min-max scaling but have less impact on standardization.",
@@ -162,6 +184,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Feature Scaling"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary goal of the machine learning pipeline?",
@@ -177,6 +200,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
 
             return {
                 id: `ml-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Machine Learning",
                 text: `Calculate the min-max scaled value for a feature with min=${minValue}, max=${maxValue}, and original value=${originalValue}. (Round the answer to 2 decimal places)`,
@@ -198,6 +222,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
 
             return {
                 id: `ml-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Machine Learning",
                 text: `Calculate the standardized value for a feature with mean=${meanValue}, standard deviation=${stdDev}, and original value=${originalValue}. (Round the answer to 2 decimal places)`,
@@ -213,12 +238,13 @@ export const questions: (n: number) => Question[] = (n: number) => {
         // Mean Absolute Error (MAE) Generated Question
         (() => {
             const numSamples = Math.floor(Math.random() * 10) + 5; // Random number of samples (5-15)
-            const targetValues = Array.from({ length: numSamples }, () => Math.floor(Math.random() * 100)); // Random target values
+            const targetValues = Array.from({length: numSamples}, () => Math.floor(Math.random() * 100)); // Random target values
             const predictedValues = targetValues.map(v => v + Math.floor(Math.random() * 20) - 10); // Random predictions with some error
             const mae = (1 / numSamples) * predictedValues.reduce((sum, pred, i) => sum + Math.abs(pred - targetValues[i]), 0);
 
             return {
                 id: `ml-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Machine Learning",
                 text: `Calculate the Mean Absolute Error (MAE) for the following target and predicted values: ${targetValues.join(", ")} (target) and ${predictedValues.join(", ")} (predicted). (Round the answer to 2 decimal places)`,
@@ -233,7 +259,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         // Root Mean Square Error (RMSE) Generated Question
         (() => {
             const numSamples = Math.floor(Math.random() * 10) + 5; // Random number of samples (5-15)
-            const targetValues = Array.from({ length: numSamples }, () => Math.floor(Math.random() * 100)); // Random target values
+            const targetValues = Array.from({length: numSamples}, () => Math.floor(Math.random() * 100)); // Random target values
             const predictedValues = targetValues.map(v => v + Math.floor(Math.random() * 20) - 10); // Random predictions with some error
             const rmse = Math.sqrt(
                 (1 / numSamples) * predictedValues.reduce((sum, pred, i) => sum + Math.pow(pred - targetValues[i], 2), 0)
@@ -241,6 +267,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
 
             return {
                 id: `ml-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Machine Learning",
                 text: `Calculate the Root Mean Square Error (RMSE) for the following target and predicted values: ${targetValues.join(", ")} (target) and ${predictedValues.join(", ")} (predicted). (Round the answer to 2 decimal places)`,
@@ -252,4 +279,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             };
         })(), // citation slide "Root Mean Square Error (RMSE)"
     ];
-}
+};

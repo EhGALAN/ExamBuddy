@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a type of machine learning?",
@@ -12,6 +14,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "What is Machine Learning?"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Decision trees are immune to overfitting.",
@@ -19,6 +22,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Difference to traditional algorithms"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following best describes Machine Learning?",
@@ -33,6 +37,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "What is Machine Learning?"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Machine Learning is a subset of Artificial Intelligence.",
@@ -41,6 +46,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Venn diagram
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a part of the ML pipeline?",
@@ -50,6 +56,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Difference to traditional algorithms"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Traditional SPAM filters rely on human-defined rules to identify SPAM emails.",
@@ -58,6 +65,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Difference to traditional algorithms"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key advantage of Machine Learning over traditional algorithms?",
@@ -72,6 +80,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Difference to traditional algorithms"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT an application of Machine Learning in healthcare?",
@@ -86,6 +95,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Applications of Machine Learning - Healthcare"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Deep Learning is a subset of Machine Learning that has revolutionized fields like computer vision and natural language processing.",
@@ -94,6 +104,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "History of Machine Learning - Modern Era"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key tool used in practical Machine Learning work?",
@@ -103,6 +114,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Tools"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "In Machine Learning, unseen data refers to data that was not part of the training set.",
@@ -111,6 +123,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Making predictions/inferences"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a supervised learning model?",
@@ -120,6 +133,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Module Structure - First part"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is an unsupervised learning model?",
@@ -129,6 +143,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Module Structure - First part"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Support Vector Machines (SVM) can be used for both classification and regression tasks.",
@@ -137,6 +152,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Module Structure - Second part"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a dimensionality reduction technique?",
@@ -146,6 +162,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Module Structure - Second part"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Neural Networks use backpropagation for training.",
@@ -154,6 +171,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Module Structure - Second part"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a generative AI model?",
@@ -163,6 +181,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "History of Machine Learning - Current Trends"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Reinforcement Learning is used in training models like AlphaGo.",

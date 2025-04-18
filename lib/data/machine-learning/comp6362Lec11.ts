@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary goal of clustering in unsupervised learning?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Clustering"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "K-Means clustering requires labeled data to function.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "K-Means"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key output of the K-Means algorithm?",
@@ -30,6 +34,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "K-Means"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The K-Means algorithm is guaranteed to converge to the optimal solution.",
@@ -38,6 +43,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "How does K-Means work?"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the purpose of the 'inertia' metric in K-Means clustering?",
@@ -47,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Performance depends on starting points"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "A lower inertia value in K-Means indicates a better clustering model.",
@@ -55,6 +62,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Performance depends on starting points"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the default behavior of the sklearn K-Means implementation regarding the number of repetitions?",
@@ -64,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Solving the variability issue"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The Mini-Batch K-Means algorithm processes all instances in each round.",
@@ -72,6 +81,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Speed optimisation"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a limitation of the K-Means algorithm?",
@@ -81,6 +91,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "K-Means limits"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The Silhouette Score is used to evaluate the quality of clustering in K-Means.",
@@ -89,6 +100,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Silhouette Score"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the Silhouette Coefficient measure in clustering?",
@@ -98,6 +110,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Silhouette Score"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "DBSCAN is a density-based clustering algorithm.",
@@ -106,6 +119,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "DBSCAN"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is a core instance in DBSCAN?",
@@ -115,6 +129,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "DBSCAN"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "DBSCAN can handle clusters of varying shapes and sizes.",
@@ -123,6 +138,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "DBSCAN"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a step in the DBSCAN algorithm?",
@@ -132,6 +148,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "DBSCAN"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "DBSCAN does not have a 'predict' function for new instances.",
@@ -140,6 +157,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "DBSCAN - Sklearn"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a probabilistic clustering algorithm?",
@@ -149,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Other clustering algorithms"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Hierarchical Clustering builds nested clusters by merging or splitting them successively.",
@@ -157,6 +176,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Other clustering algorithms"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the Rand Index used for in clustering?",
@@ -166,6 +186,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Clustering performance"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The Fowlkes-Mallows Index (FMI) is the geometric mean of precision and recall.",
@@ -174,6 +195,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Clustering performance"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key challenge in K-Means clustering?",
@@ -183,6 +205,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Choosing the right K"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Inertia naturally decreases as the number of clusters (K) increases in K-Means.",
@@ -190,10 +213,11 @@ export const questions: (n: number) => Question[] = (n: number) => {
             explanation: "As K increases, the inertia (mean square distance) tends to decrease because points are closer to their centroids.",
         }, // citation slide "Choosing the right K"
         (() => {
-            const silhouetteCoefficients = Array.from({ length: 5 }, () => Math.random().toFixed(2));
+            const silhouetteCoefficients = Array.from({length: 5}, () => Math.random().toFixed(2));
             const correctSilhouetteScore = (silhouetteCoefficients.reduce((a, b) => a + parseFloat(b), 0)) / silhouetteCoefficients.length;
             return {
                 id: `ml-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Machine Learning",
                 text: `Calculate the Silhouette Score given the following silhouette coefficients: [${silhouetteCoefficients.join(", ")}]. (Answer is rounded to 2 decimal places)`,
@@ -211,6 +235,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const fmi = tp / Math.sqrt((tp + fp) * (tp + fn));
             return {
                 id: `ml-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Machine Learning",
                 text: `Calculate the Fowlkes-Mallows Index (FMI) given TP=${tp}, FP=${fp}, and FN=${fn}. (Answer is rounded to 2 decimal places)`,

@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary difference between cooperative and competitive coevolution?",
@@ -18,6 +20,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Cooperative Coevolution"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In cooperative coevolution, each population represents a different part of a candidate solution.",
@@ -26,6 +29,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Cooperative Coevolution"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a main issue in cooperative coevolution for data clustering?",
@@ -40,6 +44,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Cooperative Coevolution"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In competitive coevolution, the fitness of an individual depends on its ability to outperform other individuals.",
@@ -48,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Competitive Coevolution"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the goal of fitness sharing in niching methods?",
@@ -62,6 +68,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Fitness Sharing (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In fitness sharing, the niche count of an individual is the sum of the sharing function values between the individual and all other individuals in the population.",
@@ -70,6 +77,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Fitness Sharing (2)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What does the sharing function in fitness sharing measure?",
@@ -84,6 +92,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Fitness Sharing (3)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In fitness sharing, if the distance between two individuals is greater than or equal to the distance threshold, the sharing function value is 0.",
@@ -92,6 +101,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Fitness Sharing (3)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a disadvantage of fitness sharing?",
@@ -106,6 +116,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Fitness Sharing (7)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In deterministic crowding, a parent is replaced only if the competing child has better fitness.",
@@ -114,6 +125,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Crowding"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary goal of niching methods in evolutionary algorithms?",
@@ -128,6 +140,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Motivation for Niching Methods"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In competitive coevolution for game playing, the fitness of an individual depends on the number of wins, draws, and losses obtained in games.",
@@ -136,6 +149,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Coevolution for learning a good strategy in game playing (4)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a potential problem with crossover in evolutionary algorithms?",
@@ -150,6 +164,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Speciation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Speciation methods restrict crossover to similar individuals, ensuring that mating occurs within the same niche or peak.",
@@ -158,6 +173,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Speciation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the main issue in a GA with cooperative evolution for data clustering?",
@@ -172,6 +188,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "A GA with cooperative evolution for data clustering"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In a GA with cooperative evolution for data clustering, each GA evolves in parallel to find the best centroid for a single cluster.",
@@ -180,6 +197,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "A GA with cooperative evolution for data clustering"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the purpose of the sharing function in fitness sharing?",
@@ -194,6 +212,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Fitness Sharing (3)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In fitness sharing, if the distance between two individuals is 0, the sharing function value is 1.",
@@ -202,6 +221,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Fitness Sharing (3)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is an advantage of fitness sharing?",
@@ -216,6 +236,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Fitness Sharing (7)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In deterministic crowding, a parent and its children compete for survival, and a parent is replaced only if the competing child has better fitness.",
@@ -224,6 +245,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Crowding"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the goal of niching methods in evolutionary algorithms?",
@@ -238,6 +260,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Motivation for Niching Methods"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In competitive coevolution for game playing, the fitness of an individual is determined by the number of wins, draws, and losses obtained in games against other individuals.",
@@ -245,4 +268,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             explanation: "In competitive coevolution for game playing, the fitness of an individual is determined by the number of wins, draws, and losses obtained in games against other individuals.",
         }, // citation slide "Coevolution for learning a good strategy in game playing (4)"
     ];
-}
+};

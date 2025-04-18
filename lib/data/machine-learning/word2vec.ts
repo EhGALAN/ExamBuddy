@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary goal of word2vec in natural language processing?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Word2vec uses a neural network to learn word embeddings.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key component of the word2vec architecture?",
@@ -30,6 +34,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Word2vec can capture semantic relationships between words, such as 'King' - 'Man' + 'Woman' ≈ 'Queen'.",
@@ -38,6 +43,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the purpose of the softmax classifier in the word2vec model?",
@@ -47,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Word2vec uses a one-hot encoded vector as input for each word.",
@@ -55,6 +62,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "How many neurons are typically used in the hidden layer of the word2vec model?",
@@ -64,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Word2vec can be used to find analogies between words, such as 'Madrid' - 'Spain' + 'France' ≈ 'Paris'.",
@@ -72,6 +81,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the role of the weight matrix in the word2vec model?",
@@ -81,6 +91,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Word2vec can be trained on large corpora of text to learn meaningful word representations.",
@@ -89,6 +100,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key advantage of word2vec?",
@@ -98,6 +110,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Word2vec uses a supervised learning approach to train its model.",
@@ -106,6 +119,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the output of the word2vec model for a given input word?",
@@ -115,6 +129,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Word2vec can be used for tasks such as sentiment analysis and text classification.",
@@ -123,6 +138,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a component of the word2vec architecture?",
@@ -132,6 +148,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Word2vec embeddings are static and do not change after training.",
@@ -140,6 +157,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the dimensionality of the word vectors in the word2vec model?",
@@ -149,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Word2vec can capture syntactic relationships between words, such as 'quick' - 'slow' + 'run' ≈ 'walk'.",
@@ -157,6 +176,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a limitation of word2vec?",
@@ -166,6 +186,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Word2vec embeddings can be used as input features for other machine learning models.",
@@ -174,6 +195,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary difference between the CBOW and Skip-gram models in word2vec?",
@@ -183,6 +205,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide word2vec
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Word2vec can be used to measure the similarity between two words.",
@@ -190,4 +213,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             explanation: "Word2vec embeddings can be used to measure the similarity between two words using cosine similarity or other distance metrics.",
         }, // citation slide word2vec
     ];
-}
+};

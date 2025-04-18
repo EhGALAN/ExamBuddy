@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a main variation operator in genetic algorithms?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation operators for binary representation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In genetic algorithms, mutation is applied to each bit with a mutation rate, such as 1%.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation operators for binary representation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a commonly used crossover operator in genetic algorithms?",
@@ -30,6 +34,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation operators for binary representation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a selection operator used in genetic algorithms?",
@@ -39,6 +44,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Components in the design of genetic algorithms"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In floating-point representation, genotypes are the same as phenotypes.",
@@ -47,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Floating-point representation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a mutation operator for floating-point representation?",
@@ -56,6 +63,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation operators for floating-point representation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Arithmetic recombination can create new real values in the genotypes.",
@@ -64,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation operators for floating-point representation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a key goal in optimizing a k-NN classifier using genetic algorithms?",
@@ -73,6 +82,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Design a genetic algorithm to optimize a kNN classifier"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a type of individual representation in genetic algorithms?",
@@ -82,6 +92,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Components in the design of genetic algorithms"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In genetic algorithms, selection is based on the fitness of individuals and is independent of individual representation.",
@@ -90,6 +101,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Components in the design of genetic algorithms"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a benefit of population-based search algorithms?",
@@ -99,6 +111,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Search space"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Exhaustive search is the best strategy for large search spaces.",
@@ -107,6 +120,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Search space"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a recombination operator for floating-point representation?",
@@ -116,6 +130,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation operators for floating-point representation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a mutation operator for binary representation?",
@@ -125,6 +140,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Variation operators for binary representation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In genetic algorithms, the fitness function evaluates the quality of a solution.",
@@ -133,6 +149,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Components in the design of genetic algorithms"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a key advantage of genetic algorithms?",
@@ -142,6 +159,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Search space"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: `Consider the knapsack problem with the following items:
@@ -159,6 +177,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Knapsack problem"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: `Consider the knapsack problem with the following items:
@@ -175,6 +194,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Knapsack problem"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: `Consider the knapsack problem with the following items:
@@ -192,6 +212,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Knapsack problem"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: `Consider the knapsack problem with the following items:
@@ -208,6 +229,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Knapsack problem"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: `Consider the knapsack problem with the following items:
@@ -224,4 +246,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             explanation: "Items 3 and 4 have a total utility score of 110 and a total weight of 5 kg, which is within the weight capacity.",
         }, // citation slide "Knapsack problem"
     ];
-}
+};

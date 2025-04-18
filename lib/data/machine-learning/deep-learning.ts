@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Why are non-linear activations necessary in multi-layer neural networks?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Theoretical Considerations
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Large neural networks are not necessary for solving complex problems.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Scale
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which activation function is commonly used to address the vanishing gradient problem?",
@@ -30,6 +34,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Vanishing Gradients
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Maxout units are a type of piecewise linear continuous (PWLC) function.",
@@ -38,6 +43,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Vanishing Gradients
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary advantage of using ReLU over sigmoidal activation functions?",
@@ -47,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Vanishing Gradients
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Convolutional Neural Networks (CNNs) are primarily used for image data.",
@@ -55,6 +62,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Convolutional Neural Networks
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the role of a kernel in a Convolutional Neural Network?",
@@ -64,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Convolutional Neural Networks
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Dropout is a regularization technique used to prevent overfitting in neural networks.",
@@ -72,6 +81,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Dropout
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the purpose of using computational graphs in neural networks?",
@@ -81,6 +91,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Computational Graphs
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Increasing the size of a dataset is a natural regularizer for large models.",
@@ -89,6 +100,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Scale
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a benefit of using efficient computers for training neural networks?",
@@ -98,6 +110,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Scale
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The cross-entropy error for sigmoidal outputs eliminates the derivative in the weight update equation.",
@@ -106,6 +119,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Vanishing Gradients
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary function of a convolutional layer in a CNN?",
@@ -115,6 +129,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Convolutional Layer
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Dropout with a probability of p=0.5 means that 50% of the neurons are randomly dropped during training.",
@@ -123,6 +138,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Dropout (cont.)
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the purpose of symbolic differentiation in computational graphs?",
@@ -132,6 +148,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Computational Graphs
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Rectified Linear Units (ReLU) are a type of non-linear activation function.",
@@ -140,6 +157,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Vanishing Gradients
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key advantage of using large datasets in machine learning?",
@@ -149,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Scale
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Maxout units are designed to handle the vanishing gradient problem in neural networks.",
@@ -157,6 +176,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Vanishing Gradients
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary role of a kernel in a 2D convolution operation?",
@@ -166,6 +186,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Convolutional Neural Networks
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Dropout is a technique used to improve the convergence speed of neural networks.",
@@ -174,6 +195,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Dropout
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the main advantage of using computational graphs in neural network training?",
@@ -183,6 +205,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Computational Graphs
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the weight update equation $\\Delta w_{ij} = \\epsilon(t_{k} - o_{k}) \\sigma'(\\eta_{j}) s_{i}$, what does $\\Delta w_{ij}$ represent?",
@@ -192,6 +215,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Vanishing Gradients
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the weight update equation $\\Delta w_{ij} = \\epsilon(t_{k} - o_{k}) \\sigma'(\\eta_{j}) s_{i}$, what is the role of $\\epsilon$?",
@@ -201,6 +225,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Vanishing Gradients
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the weight update equation $\\Delta w_{ij} = \\epsilon(t_{k} - o_{k}) \\sigma'(\\eta_{j}) s_{i}$, what does $t_{k}$ represent?",
@@ -210,6 +235,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Vanishing Gradients
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the weight update equation $\\Delta w_{ij} = \\epsilon(t_{k} - o_{k}) \\sigma'(\\eta_{j}) s_{i}$, what does $o_{k}$ represent?",
@@ -219,6 +245,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Vanishing Gradients
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the weight update equation $\\Delta w_{ij} = \\epsilon(t_{k} - o_{k}) \\sigma'(\\eta_{j}) s_{i}$, what does $\\sigma'(\\eta_{j})$ represent?",
@@ -228,6 +255,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Vanishing Gradients
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the weight update equation $\\Delta w_{ij} = \\epsilon(t_{k} - o_{k}) \\sigma'(\\eta_{j}) s_{i}$, what does $s_{i}$ represent?",
@@ -237,6 +265,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Vanishing Gradients
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the computational graph equations $h = \\tanh(Wx + b)$ and $y = Vh + a$, what does $h$ represent?",
@@ -246,6 +275,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Computational Graphs
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the computational graph equations $h = \\tanh(Wx + b)$ and $y = Vh + a$, what does $W$ represent?",
@@ -255,6 +285,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Computational Graphs
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the computational graph equations $h = \\tanh(Wx + b)$ and $y = Vh + a$, what does $b$ represent?",
@@ -264,6 +295,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Computational Graphs
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the computational graph equations $h = \\tanh(Wx + b)$ and $y = Vh + a$, what does $y$ represent?",
@@ -273,6 +305,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Computational Graphs
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the computational graph equations $h = \\tanh(Wx + b)$ and $y = Vh + a$, what does $V$ represent?",
@@ -282,6 +315,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Computational Graphs
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "In the computational graph equations $h = \\tanh(Wx + b)$ and $y = Vh + a$, what does $a$ represent?",

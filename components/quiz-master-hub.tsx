@@ -171,6 +171,9 @@ export default function QuizMasterHub() {
         <div className="text-sm">
           Score: {score}/{currentQuestionIndex}
         </div>
+        <Button variant="outline" onClick={() => window.open(questions[currentQuestionIndex].report, "_blank")}>
+            Report question
+        </Button>
       </CardFooter>
     </Card>
   )

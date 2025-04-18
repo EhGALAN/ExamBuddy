@@ -1,10 +1,12 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the primary structure of a decision tree?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Decision Trees"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Decision trees learn a hierarchy of if/else questions that lead to a decision.",
@@ -20,6 +23,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Decision Trees"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which concept is similar to the structure of a decision tree?",
@@ -28,6 +32,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Decision Trees - Concept"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "The `DecisionTreeClassifier` in scikit-learn requires the `max_depth` parameter to be explicitly set.",
@@ -35,6 +40,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Train a Decision Tree Classifier"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which package can be used to visualize the structure of a decision tree?",
@@ -43,6 +49,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Decision Tree structure"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "generated",
             subject: "Machine Learning",
             text: "Calculate the Gini impurity for a node with the following class distribution: [10 instances of class A, 5 instances of class B, 3 instances of class C]. (Answer is rounded to 2 decimal places)",
@@ -55,6 +62,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Gini Impurity"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What does the CART algorithm aim to minimize during training?",
@@ -63,6 +71,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "The CART training algorithm"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Entropy is a measure of disorder in a system, and lower entropy indicates more information.",
@@ -70,6 +79,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Using Entropy for impurity estimation"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a regularization parameter for decision trees?",
@@ -78,6 +88,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Regularisation parameters"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Grid Search tests all combinations of hyperparameters to find the best model.",
@@ -85,6 +96,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Grid Search"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Decision trees can be used for both classification and regression tasks.",
@@ -92,6 +104,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Decision Tree Regression"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is the cost function used in CART for regression tasks?",
@@ -100,6 +113,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "CART Cost Function"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Decision trees are prone to overfitting if not properly regularized.",
@@ -107,6 +121,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Regularisation"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is an advantage of decision trees?",
@@ -115,6 +130,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Important points"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Decision trees do not require scaling of features.",
@@ -122,6 +138,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Important points"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a hyperparameter for decision trees?",
@@ -130,6 +147,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Regularisation parameters"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Gini impurity tends to isolate the most frequent class in its own branch.",
@@ -137,6 +155,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Gini Impurity vs Entropy"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is one of the key advantages of decision trees?",
@@ -145,6 +164,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Important points"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is NOT a reason why decision trees are popular?",
@@ -153,6 +173,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Important points"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Decision trees do not need scaling of features because they do not rely on comparisons across features.",
@@ -160,6 +181,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Important points"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "What is a common issue with decision trees if they are not properly regularized?",
@@ -168,6 +190,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Important points"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Decision trees are widely used for both classification and regression tasks.",
@@ -175,6 +198,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Important points"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Machine Learning",
             text: "Which of the following is a key advantage of decision trees in terms of interpretability?",
@@ -183,6 +207,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Important points"
         {
             id: `ml-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Machine Learning",
             text: "Decision trees are often preferred for their ability to explain the decision-making process.",

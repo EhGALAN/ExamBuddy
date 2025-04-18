@@ -4,6 +4,7 @@ export type QuestionType = "multiple-choice" | "true-false" | "generated"
 
 export interface Question {
   id: string
+  report: string
   type: QuestionType
   subject: Subject
   text: string

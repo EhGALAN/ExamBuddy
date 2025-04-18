@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a type of evolutionary algorithm?",
@@ -12,6 +14,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Four types of evolutionary algorithms"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Evolutionary algorithms are inspired by Darwin's theory of evolution.",
@@ -19,6 +22,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Darwin's theory of evolution"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary goal of the selection operator in evolutionary algorithms?",
@@ -27,6 +31,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Selection operators"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Mutation operators in evolutionary algorithms always result in better offspring than their parents.",
@@ -34,6 +39,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Mutation operators"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a component of evolutionary algorithms?",
@@ -42,6 +48,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Components of EAs"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In evolutionary algorithms, the population size remains constant over generations.",
@@ -49,6 +56,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Population"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the role of the evaluation function in evolutionary algorithms?",
@@ -57,6 +65,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Evaluation function"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Recombination operators in evolutionary algorithms always produce offspring that are better than their parents.",
@@ -64,6 +73,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Recombination operators"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a type of swarm intelligence algorithm?",
@@ -72,6 +82,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Swarm Intelligence Algorithms"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Evolutionary algorithms are deterministic in nature.",
@@ -79,6 +90,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "General properties of how EAs work"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary goal of evolutionary algorithms?",
@@ -87,6 +99,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Motivation for evolutionary algorithms"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In evolutionary algorithms, exploration refers to concentrating the search around known good regions.",
@@ -94,6 +107,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Trade-off between exploration and exploitation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a component of evolutionary algorithms?",
@@ -102,6 +116,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Components of EAs"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Evolutionary algorithms can get stuck in local optima if there is too much exploitation.",
@@ -109,6 +124,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Trade-off between exploration and exploitation"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the role of variation operators in evolutionary algorithms?",
@@ -117,6 +133,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Variation operators"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In evolutionary algorithms, the genotype space is the same as the phenotype space.",
@@ -124,6 +141,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Genotype space and phenotype space"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a correct statement about evolutionary algorithms?",
@@ -132,6 +150,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Exercise"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Evolutionary algorithms are only used for optimization tasks.",
@@ -139,6 +158,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Motivation for evolutionary algorithms"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the role of the fitness function in evolutionary algorithms?",
@@ -147,6 +167,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Evaluation function"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In evolutionary algorithms, recombination and mutation are deterministic processes.",
@@ -154,6 +175,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: "Recombination and mutation operators"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a type of genetic representation in evolutionary algorithms?",

@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a type of unsupervised learning?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Introduction to Clustering
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In clustering, each example is assigned a pre-defined class label.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Introduction to Clustering
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What does the K-means algorithm aim to minimize?",
@@ -30,6 +34,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The K-means algorithm
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "K-means always finds the global minimum of the distance function.",
@@ -38,6 +43,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Limitations of K-means
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a limitation of K-means?",
@@ -47,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Limitations of K-means
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In K-means, different initial centroids can lead to different clustering results.",
@@ -55,6 +62,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Limitations of K-means
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the first step in the K-means algorithm?",
@@ -64,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The K-means algorithm
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In K-means, the centroid of a cluster is calculated as the mean value of all attributes over all examples in the cluster.",
@@ -72,6 +81,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide K-means in more detail (3)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a step in the K-means algorithm?",
@@ -81,6 +91,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The K-means algorithm
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In K-means, the Euclidean distance is used to assign examples to the nearest centroid.",
@@ -89,6 +100,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide K-means in more detail (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for the Euclidean distance between an example and a centroid in two dimensions?",
@@ -103,6 +115,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide K-means in more detail (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In graph-based clustering, each example is associated with a node in a graph.",
@@ -111,6 +124,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Partitional Clustering based on Minimum Spanning Trees (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is a minimum spanning tree (MST)?",
@@ -120,6 +134,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Partitional Clustering based on Minimum Spanning Trees (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In graph-based clustering, inconsistent edges are removed to form clusters.",
@@ -128,6 +143,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Partitional Clustering based on Minimum Spanning Trees (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is an inconsistent edge in graph-based clustering?",
@@ -137,6 +153,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Partitional Clustering based on Minimum Spanning Trees (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In hierarchical clustering, the output is a dendogram.",
@@ -145,6 +162,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Hierarchical Clustering Algorithms
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a type of hierarchical clustering?",
@@ -154,6 +172,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Hierarchical Clustering Algorithms
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In agglomerative clustering, the process starts with one cluster for each example.",
@@ -162,6 +181,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Basic Pseudocode for Agglomerative Clustering
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the final step in agglomerative clustering?",
@@ -171,6 +191,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Basic Pseudocode for Agglomerative Clustering
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In single-link agglomerative clustering, the distance between two clusters is the distance between the nearest pair of examples.",
@@ -179,6 +200,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Agglomerative Clustering in more detail (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the distance between two clusters in complete-link agglomerative clustering?",
@@ -188,6 +210,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Agglomerative Clustering in more detail (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In average-link agglomerative clustering, the distance between two clusters is the arithmetic average of the distances between all pairs of examples.",
@@ -196,6 +219,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Agglomerative Clustering in more detail (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a limitation of hierarchical clustering?",
@@ -205,6 +229,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Limitations of hierarchical clustering
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Density-based clustering can discover clusters of arbitrary shape.",
@@ -213,6 +238,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Overview of density-based clustering
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is a key feature of density-based clustering?",
@@ -222,6 +248,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Overview of density-based clustering
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In clustering evaluation, internal indices measure cohesion and separation within and between clusters.",
@@ -230,6 +257,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Internal indices for partitional clustering (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the goal of internal indices in clustering evaluation?",
@@ -239,6 +267,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Internal indices for partitional clustering (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "External indices in clustering evaluation use information not included in the dataset.",
@@ -247,6 +276,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Clustering Evaluation
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is an internal index for clustering evaluation?",
@@ -256,6 +286,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Internal indices for partitional clustering (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Clustering is a form of supervised learning.",
@@ -264,6 +295,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Summary
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a partitional clustering method?",
@@ -273,6 +305,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Summary
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In graph-based clustering, the minimum spanning tree (MST) is used to create separate clusters.",
@@ -281,6 +314,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Summary
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the goal of K-means clustering?",
@@ -290,6 +324,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Summary
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In agglomerative hierarchical clustering, the process starts with all examples in a single cluster.",
@@ -298,6 +333,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Basic Pseudocode for Agglomerative Clustering
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the first step in agglomerative hierarchical clustering?",
@@ -307,6 +343,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Basic Pseudocode for Agglomerative Clustering
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In density-based clustering, each example in a cluster must be close to another example in the cluster.",
@@ -315,6 +352,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Overview of density-based clustering
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a step in the K-means algorithm?",
@@ -324,6 +362,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The K-means algorithm
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In K-means, the centroid of a cluster is calculated as the mean value of all attributes over all examples in the cluster.",
@@ -332,6 +371,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide K-means in more detail (3)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In graph-based clustering, each example is associated with a node in a graph.",
@@ -340,6 +380,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Partitional Clustering based on Minimum Spanning Trees (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is a minimum spanning tree (MST)?",
@@ -349,6 +390,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Partitional Clustering based on Minimum Spanning Trees (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In graph-based clustering, inconsistent edges are removed to form clusters.",
@@ -357,6 +399,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Partitional Clustering based on Minimum Spanning Trees (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is an inconsistent edge in graph-based clustering?",
@@ -366,6 +409,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Partitional Clustering based on Minimum Spanning Trees (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In hierarchical clustering, the output is a dendogram.",
@@ -374,6 +418,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Hierarchical Clustering Algorithms
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a type of hierarchical clustering?",
@@ -388,6 +433,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const euclideanDistance = Math.sqrt(point1.reduce((sum, x, i) => sum + Math.pow(x - point2[i], 2), 0));
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: `Calculate the Euclidean Distance between the points ${JSON.stringify(point1)} and ${JSON.stringify(point2)}. (Answer is rounded to 2 decimal places)`,

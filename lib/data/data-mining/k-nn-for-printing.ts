@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is an example of an instance-based learning method?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Instance-Based Learning
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the classification of a query instance is based on the majority class of its nearest neighbours.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: k-Nearest Neighbours
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What does the inductive bias in k-Nearest Neighbours assume?",
@@ -30,6 +34,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Inductive Bias in k-Nearest Neighbours
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the distance between two instances can be measured using the Manhattan distance.",
@@ -38,6 +43,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Measuring Distance - Instances
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a reason for normalizing continuous attribute values in k-Nearest Neighbours?",
@@ -47,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Measuring Distance - Normalisation
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, attribute weighting allows different attributes to have different degrees of relevance.",
@@ -55,6 +62,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Attribute Weighting (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the classification of a new instance is faster if only typical instances are used instead of all training instances.",
@@ -63,6 +71,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Selecting Typical Instances (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of selecting typical instances in k-Nearest Neighbours?",
@@ -72,6 +81,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Selecting Typical Instances (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the intra-class similarity of an instance is the mean similarity between the instance and other instances of the same class.",
@@ -80,6 +90,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Selecting Typical Instances (4)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a disadvantage of the k-Nearest Neighbours algorithm?",
@@ -89,6 +100,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Summary
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the value of k can be set to any number between 1 and the total number of training instances.",
@@ -97,6 +109,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Inductive Bias in Practice
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for the Manhattan distance between two instances X and Y?",
@@ -106,6 +119,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Measuring Distance - Instances
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the distance between categorical attribute values is 0 if the values are the same and 1 if they are different.",
@@ -114,6 +128,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Measuring Distance - Attributes
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of normalization in k-Nearest Neighbours?",
@@ -123,6 +138,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Measuring Distance - Normalisation
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, attribute weights can be manually specified or automatically computed.",
@@ -131,6 +147,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Attribute Weighting (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a reason for using attribute weighting in k-Nearest Neighbours?",
@@ -140,6 +157,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Attribute Weighting (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the inter-class similarity of an instance is the mean similarity between the instance and instances of other classes.",
@@ -148,6 +166,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Selecting Typical Instances (4)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for the weighted Euclidean distance between two instances $X$ and $Y$?",
@@ -162,6 +181,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Attribute Weighting (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the classification of a new instance is based on the majority class of its k nearest neighbours.",
@@ -170,6 +190,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: k-Nearest Neighbours
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of selecting typical instances in k-Nearest Neighbours?",
@@ -179,6 +200,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Selecting Typical Instances (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the intra-class similarity of an instance is the mean similarity between the instance and other instances of the same class.",
@@ -187,6 +209,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Selecting Typical Instances (4)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a disadvantage of the k-Nearest Neighbours algorithm?",
@@ -196,6 +219,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Summary
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the value of k can be set to any number between 1 and the total number of training instances.",
@@ -204,6 +228,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Inductive Bias in Practice
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the distance between categorical attribute values is 0 if the values are the same and 1 if they are different.",
@@ -212,6 +237,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Measuring Distance - Attributes
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of normalization in k-Nearest Neighbours?",
@@ -221,6 +247,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Measuring Distance - Normalisation
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, attribute weights can be manually specified or automatically computed.",
@@ -229,6 +256,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Attribute Weighting (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a reason for using attribute weighting in k-Nearest Neighbours?",
@@ -238,6 +266,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Attribute Weighting (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the inter-class similarity of an instance is the mean similarity between the instance and instances of other classes.",
@@ -246,6 +275,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Selecting Typical Instances (4)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for the Manhattan distance between two instances $X$ and $Y$?",
@@ -260,6 +290,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Measuring Distance - Instances
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the classification of a new instance is based on the majority class of its k nearest neighbours.",
@@ -268,6 +299,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: k-Nearest Neighbours
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of selecting typical instances in k-Nearest Neighbours?",
@@ -277,6 +309,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Selecting Typical Instances (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the intra-class similarity of an instance is the mean similarity between the instance and other instances of the same class.",
@@ -285,6 +318,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Selecting Typical Instances (4)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a disadvantage of the k-Nearest Neighbours algorithm?",
@@ -294,6 +328,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Summary
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the value of k can be set to any number between 1 and the total number of training instances.",
@@ -302,6 +337,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Inductive Bias in Practice
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the distance between categorical attribute values is 0 if the values are the same and 1 if they are different.",
@@ -310,6 +346,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Measuring Distance - Attributes
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of normalization in k-Nearest Neighbours?",
@@ -319,6 +356,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Measuring Distance - Normalisation
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, attribute weights can be manually specified or automatically computed.",
@@ -327,6 +365,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Attribute Weighting (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a reason for using attribute weighting in k-Nearest Neighbours?",
@@ -336,6 +375,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Attribute Weighting (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In k-Nearest Neighbours, the inter-class similarity of an instance is the mean similarity between the instance and instances of other classes.",

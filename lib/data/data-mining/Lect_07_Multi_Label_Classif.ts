@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a key difference between single-label and multi-label classification?",
@@ -18,6 +20,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Basic idea of Multi-Label Classification
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The Instance Deletion method in multi-label classification is acceptable if a large number of examples are deleted.",
@@ -26,6 +29,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Instance Deletion method
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main disadvantage of the Binary Relevance method in multi-label classification?",
@@ -40,6 +44,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Binary Relevance method (3)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The Power Set method in multi-label classification creates a single new class variable for each combination of labels in the original dataset.",
@@ -48,6 +53,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Power Set method (3)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a step in the Classifier Chain method?",
@@ -62,6 +68,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Classifier Chain method (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "generated",
             subject: "Data Mining & Knowledge Discovery",
             text: "If a multi-label dataset has 3 class labels (A, B, C), how many possible compound class labels can be generated using the Power Set method?",
@@ -73,6 +80,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Power Set method (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main advantage of the Power Set method in multi-label classification?",
@@ -87,6 +95,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Power Set method (4)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In the Classifier Chain method, the order of labels in the chain does not affect the performance of the model.",
@@ -95,6 +104,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Classifier Chain method (3)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a real-world application of multi-label classification?",
@@ -109,6 +119,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Basic idea of Multi-Label Classification
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The Binary Relevance method is the most used problem transformation method in multi-label classification.",
@@ -117,6 +128,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Binary Relevance method (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "generated",
             subject: "Data Mining & Knowledge Discovery",
             text: "If a multi-label dataset has 4 class labels, what is the maximum number of possible compound class labels in the Power Set method?",
@@ -128,6 +140,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Power Set method (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main disadvantage of the Instance Deletion method in multi-label classification?",
@@ -142,6 +155,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Instance Deletion method
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The Classifier Chain method always uses a random ordering of labels.",
@@ -150,6 +164,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Classifier Chain method (3)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a drawback of the Binary Relevance method?",
@@ -164,6 +179,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Binary Relevance method (3)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The Power Set method in multi-label classification always results in a dataset with 2^n compound class labels, where n is the number of original class labels.",
@@ -172,6 +188,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Power Set method (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "generated",
             subject: "Data Mining & Knowledge Discovery",
             text: "If a multi-label dataset has 5 class labels, what is the maximum number of possible compound class labels in the Power Set method?",
@@ -183,6 +200,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Power Set method (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main advantage of the Classifier Chain method?",
@@ -197,6 +215,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Classifier Chain method (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The dominance of single-label classification is solely due to its superior performance over multi-label classification.",
@@ -205,6 +224,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Summary of multi-label classification
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a problem transformation method in multi-label classification?",
@@ -219,6 +239,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Summary of multi-label classification
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In the Binary Relevance method, each dataset shares the same features but has different class labels.",
@@ -227,6 +248,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Binary Relevance method (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the main drawback of the Power Set method?",
@@ -241,6 +263,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide: Power Set method (4)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The Classifier Chain method is always more effective than the Binary Relevance method.",
@@ -248,4 +271,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             explanation: "The effectiveness of the Classifier Chain method depends on the label order and can vary compared to the Binary Relevance method.",
         }, // citation slide: Classifier Chain method (3)
     ];
-}
+};

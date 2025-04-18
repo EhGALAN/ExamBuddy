@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a key premise of machine learning?",
@@ -17,6 +19,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The Essence of Machine Learning
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The goal of supervised learning is to predict the label of an example given its input features.",
@@ -24,6 +27,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Components of Supervised Learning
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a type of machine learning?",
@@ -32,6 +36,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Types of Machine Learning
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the target function in supervised learning?",
@@ -45,6 +50,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Components of Supervised Learning
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Generalisation in machine learning means the model can perform well on new, unseen data.",
@@ -52,6 +58,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The Need for Generalisation
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is an example of induction in machine learning?",
@@ -65,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide The Need for Generalisation
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of a hypothesis in supervised learning?",
@@ -78,6 +86,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Components of Supervised Learning
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Reinforcement learning is a type of machine learning where an agent learns to make decisions by taking actions in an environment.",
@@ -85,10 +94,11 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Types of Machine Learning
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In machine learning, the process of using specific examples to uncover the underlying process is called induction.",
             correctAnswer: true,
         }, // citation slide The Need for Generalisation
     ];
-}
+};

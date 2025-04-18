@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Who created genetic algorithms?",
@@ -12,6 +14,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Genetic Algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Genetic algorithms are a type of evolutionary algorithms.",
@@ -19,6 +22,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Genetic Algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What does the genotype represent in genetic algorithms?",
@@ -27,6 +31,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Genetic Algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a step in the flowchart of genetic algorithms?",
@@ -35,6 +40,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Flowchart of genetic algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In genetic algorithms, mutation is applied to the offspring after recombination.",
@@ -42,6 +48,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Flowchart of genetic algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In fitness proportional selection, individuals with higher fitness have a higher chance of being selected.",
@@ -49,6 +56,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selection of good individuals for reproduction
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the crossover probability typically used in genetic algorithms?",
@@ -57,6 +65,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Selected individuals (parents) are paired at random
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Mutation in genetic algorithms is usually applied with a bitwise probability of 1%.",
@@ -64,6 +73,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Children can also undergo mutation
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a type of selection in genetic algorithms?",
@@ -72,6 +82,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Components in the design of genetic algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In genetic algorithms, selection is based on the fitness of individuals and independent of their representation.",
@@ -79,6 +90,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Components in the design of genetic algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "The fitness of the population improves over generations in genetic algorithms.",
@@ -86,6 +98,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Design a genetic algorithm to solve this problem
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a type of representation in genetic algorithms?",
@@ -94,6 +107,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Components in the design of genetic algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In genetic algorithms, the selection process is independent of the individual's representation.",
@@ -101,6 +115,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Components in the design of genetic algorithms
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the mutation probability typically used in genetic algorithms?",
@@ -109,6 +124,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Children can also undergo mutation
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In genetic algorithms, the fitness function is used to evaluate the quality of individuals.",
@@ -128,6 +144,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             }
             return {
                 id: `nc-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Natural Computation",
                 text: `Calculate the fitness value of an individual with the genotype '${individualGenotype}' using the payment function:
@@ -146,6 +163,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const percentageFitness = Math.round((individualFitness / totalFitness) * 10000) / 100; // Rounded to 2 decimal places
             return {
                 id: `nc-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Natural Computation",
                 text: `Calculate the percentage of total fitness for an individual with a fitness value of ${individualFitness} in a population with a total fitness of ${totalFitness}. (Answer rounded to 2 decimal places)`,

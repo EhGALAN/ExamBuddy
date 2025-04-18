@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary goal of using Genetic Programming (GP) in predicting CO₂ emissions?",
@@ -18,6 +20,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "The objective of the GP (the target problem)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In Genetic Programming, the fitness function for predicting CO₂ emissions is typically based on Mean Absolute Error (MAE).",
@@ -26,6 +29,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Main components of the GP algorithm"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a common predictive variable in models for predicting CO₂ emissions?",
@@ -35,6 +39,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "The objective of the GP (the target problem)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Introns in Genetic Programming are parts of the code that contribute to the fitness of an individual.",
@@ -43,6 +48,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Introns"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is a primary disadvantage of code bloat in Genetic Programming?",
@@ -57,6 +63,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Code 'Bloat'"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "The 'neutral code is protective' hypothesis suggests that introns protect against the destructive effects of crossover in Genetic Programming.",
@@ -65,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Neutral code is protective" hypothesis
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a method to limit code bloat in Genetic Programming?",
@@ -79,6 +87,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "What to do about introns and bloat (2)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In Genetic Programming, the notion of 'building blocks' is less problematic compared to Genetic Algorithms (GAs).",
@@ -87,6 +96,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Meaning of 'building blocks' in GP (?)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary difference between Genetic Algorithms (GAs) and Genetic Programming (GP)?",
@@ -101,6 +111,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Summary: differences between GA and GP"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Genetic Programming algorithms for predicting CO₂ emissions typically use a fixed size limit for individuals.",
@@ -109,6 +120,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "What to do about introns and bloat (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a common function in the function set of Genetic Programming algorithms for predicting CO₂ emissions?",
@@ -118,6 +130,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Main components of the GP algorithm"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Genetic Programming models for predicting CO₂ emissions are typically tested on historical data.",
@@ -126,6 +139,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "The Testing Phase"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is a common measure of prediction error in Genetic Programming models for CO₂ emissions?",
@@ -135,6 +149,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Main components of the GP algorithm"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In Genetic Programming, crossover is always more effective than mutation in producing better individuals.",
@@ -143,6 +158,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Neutral code is protective" hypothesis
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is NOT a method to address introns and bloat in Genetic Programming?",
@@ -157,6 +173,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "What to do about introns and bloat (1)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Genetic Programming algorithms for predicting CO₂ emissions often use a lexicographic-optimization approach to compare individuals.",
@@ -165,6 +182,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "What to do about introns and bloat (2)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary role of introns in the evolutionary process of Genetic Programming?",
@@ -179,6 +197,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Back to 'neutral code is protective' hypothesis"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "The fitness function in Genetic Programming favors larger trees because there are more ways to represent a solution with large trees.",
@@ -187,6 +206,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Fitness causes bloat" hypothesis
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "Which of the following is a common example of an intron in Genetic Programming?",
@@ -201,6 +221,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Examples of introns"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "In Genetic Programming, the meaning of a subtree depends on its context in the entire tree.",
@@ -209,6 +230,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Meaning of 'building blocks' in GP (?)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Natural Computation",
             text: "What is the primary goal of modifying crossover and mutation in Genetic Programming to favor shorter solutions?",
@@ -223,6 +245,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "What to do about introns and bloat (3)"
         {
             id: `nc-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Natural Computation",
             text: "Genetic Programming algorithms for predicting CO₂ emissions use a fixed set of input variables.",
@@ -230,4 +253,4 @@ export const questions: (n: number) => Question[] = (n: number) => {
             explanation: "GP algorithms use a fixed set of input variables, such as GDP, Population, and Energy consumption, to predict CO₂ emissions.",
         }, // citation slide "The objective of the GP (the target problem)"
     ];
-}
+};

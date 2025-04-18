@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for Bayes' theorem?",
@@ -18,6 +20,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Review of Bayes' Theorem
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Bayes' theorem allows us to compute P(A|B) in terms of P(B|A) and P(B).",
@@ -26,6 +29,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Review of Bayes' Theorem
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "If P(disease is present) = 1%, P(true positive) = 99%, and P(false positive) = 1%, what is the probability that a patient with a positive test result has the disease?",
@@ -35,6 +39,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Applying Bayes' theorem (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In Bayesian classification, we choose the class that maximizes P(Ci|Example).",
@@ -43,6 +48,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bayesian Classification (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the Naïve Bayes assumption?",
@@ -57,6 +63,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes Classifier
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes is sensitive to redundant attributes.",
@@ -65,6 +72,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Limitations of Naïve Bayes
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for the Naïve Bayes classifier?",
@@ -79,6 +87,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes Classifier
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In Naïve Bayes, missing attributes can be ignored because attributes are conditionally independent given the class.",
@@ -87,6 +96,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Strengths of Naïve Bayes
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of introducing artificial (imagined) observations in Naïve Bayes?",
@@ -101,6 +111,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes - example (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes is particularly effective for spam detection.",
@@ -109,6 +120,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Strengths of Naïve Bayes
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a limitation of Naïve Bayes?",
@@ -123,6 +135,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Limitations of Naïve Bayes
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In Naïve Bayes, continuous attributes are modeled using density functions like Gaussian distributions.",
@@ -131,6 +144,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Students' Questions: what if independent attributes are continuous?
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for $P(E_j|C_i)$ in Naïve Bayes when attributes are independent?",
@@ -145,6 +159,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes Classifier
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes can handle missing attributes by ignoring them in the calculation.",
@@ -153,6 +168,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Strengths of Naïve Bayes
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of the prior probability P(Ci) in Naïve Bayes?",
@@ -167,6 +183,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bayesian Classification (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes assumes that all attributes are equally important for classification.",
@@ -175,6 +192,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Limitations of Naïve Bayes
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for updating the probability of an attribute in Naïve Bayes with imagined occurrences?",
@@ -189,6 +207,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes - example (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes is a probabilistic classifier.",
@@ -197,6 +216,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes Classifier
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of the training phase in Naïve Bayes?",
@@ -211,6 +231,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes - example (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes can be used for both discrete and continuous attributes.",
@@ -219,6 +240,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Students' Questions: what if independent attributes are continuous?
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for $P(C_i|E_j)$ in Naïve Bayes?",
@@ -233,6 +255,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes Classifier
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes assumes that attributes are conditionally independent given the class.",
@@ -241,6 +264,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes Classifier
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of the test phase in Naïve Bayes?",
@@ -255,6 +279,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes - example (3)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes is sensitive to the presence of redundant attributes.",
@@ -263,6 +288,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Limitations of Naïve Bayes
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of the imagined occurrences in Naïve Bayes?",
@@ -277,6 +303,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes - example (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes is a generative model.",
@@ -285,6 +312,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes Classifier
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for $P(E_j)$ in Naïve Bayes?",
@@ -299,6 +327,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bayesian Classification (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes assumes that all attributes are independent of each other.",
@@ -307,6 +336,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes Classifier
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of the prior probability P(Ci) in Naïve Bayes?",
@@ -321,6 +351,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bayesian Classification (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes can handle missing attributes by ignoring them in the calculation.",
@@ -329,6 +360,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Strengths of Naïve Bayes
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of the training phase in Naïve Bayes?",
@@ -343,6 +375,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes - example (1)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes can be used for both discrete and continuous attributes.",
@@ -351,6 +384,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Students' Questions: what if independent attributes are continuous?
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for $P(C_i|E_j)$ in Naïve Bayes?",
@@ -365,6 +399,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes Classifier
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes assumes that attributes are conditionally independent given the class.",
@@ -373,6 +408,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes Classifier
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of the test phase in Naïve Bayes?",
@@ -387,6 +423,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes - example (3)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes is sensitive to the presence of redundant attributes.",
@@ -395,6 +432,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Limitations of Naïve Bayes
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of the imagined occurrences in Naïve Bayes?",
@@ -409,6 +447,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes - example (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes is a generative model.",
@@ -417,6 +456,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Naïve Bayes Classifier
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for $P(E_j)$ in Naïve Bayes?",
@@ -431,6 +471,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide Bayesian Classification (2)
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Naïve Bayes assumes that all attributes are independent of each other.",

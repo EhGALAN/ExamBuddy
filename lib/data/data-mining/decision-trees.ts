@@ -1,9 +1,11 @@
 import {Question} from "../../types";
+import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the class attribute in the provided training set for classification?",
@@ -13,6 +15,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Training Set for Classification: a very simple example"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In a decision tree, leaf nodes represent predictor attributes.",
@@ -21,6 +24,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Decision Tree Structure - example"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which attribute is used as the root node in the provided decision tree example?",
@@ -42,6 +46,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
                             : "no";
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: `If a new example has a 'Salary' of '${salary}' and an 'Age' of ${age}, what is the predicted class according to the decision tree?`,
@@ -55,6 +60,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         })(), // citation slide "Decision Tree Structure - example"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the classification rule for examples with 'Salary' = 'high'?",
@@ -64,6 +70,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Classification Rules - example"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Decision trees are built in a bottom-up fashion.",
@@ -72,6 +79,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Basic idea of decision tree induction"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a stopping rule for decision tree induction?",
@@ -86,6 +94,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const entropy = -(pYes * Math.log2(pYes) + pNo * Math.log2(pNo));
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: `Calculate the entropy for a binary outcome with probabilities P(yes) = ${pYes.toFixed(2)} and P(no) = ${pNo.toFixed(2)}. (Answer rounded to 2 decimal places)`,
@@ -99,6 +108,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         })(), // citation slide "Entropy"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which attribute has the highest information gain in the provided example?",
@@ -108,6 +118,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Attribute Selection in Decision Trees using Information Gain (3)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Information gain has a bias favoring attributes with many values.",
@@ -116,6 +127,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Attribute Selection in Decision Trees using Information Gain (4)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the formula for information gain?",
@@ -135,6 +147,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
             const informationGain = entropy - conditionalEntropy;
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: `If the entropy of a dataset is ${entropy} and the conditional entropy after splitting on an attribute is ${conditionalEntropy}, what is the information gain? (Answer rounded to 2 decimal places)`,
@@ -148,6 +161,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         })(), // citation slide "Information Gain (2)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which criterion reduces the bias of information gain?",
@@ -157,6 +171,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Attribute Selection in Decision Trees using Information Gain (5)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Partitioning examples according to unique values of an attribute always leads to overfitting.",
@@ -165,6 +180,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Attribute Selection in Decision Trees using Information Gain (4)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the entropy of a dataset with two outcomes, each having a probability of 0.5?",
@@ -174,6 +190,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Entropy for Two Outcomes"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a common stopping rule for decision tree induction?",
@@ -183,6 +200,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Stopping Rules"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Decision trees are always built using information gain as the attribute selection criterion.",
@@ -191,6 +209,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Attribute Selection in Decision Trees using Information Gain (5)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of conditional entropy in decision tree induction?",
@@ -200,6 +219,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Conditional Entropy"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a type of entropy?",
@@ -209,6 +229,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Partition Entropy"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The Information Gain Ratio criterion always selects the attribute with the highest information gain.",
@@ -217,6 +238,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Attribute Selection in Decision Trees using Information Gain (5)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of the Information Gain Ratio criterion?",
@@ -226,6 +248,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Attribute Selection in Decision Trees using Information Gain (5)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a limitation of the Information Gain criterion?",
@@ -235,6 +258,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Attribute Selection in Decision Trees using Information Gain (4)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "Decision trees are built in a recursive manner.",
@@ -243,6 +267,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Basic idea of decision tree induction"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "What is the purpose of the stopping rules in decision tree induction?",
@@ -260,6 +285,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
                 (negativeClasses / totalExamples) * Math.log2(negativeClasses / totalExamples);
             return {
                 id: `dm-${++n}`,
+                report: generateGitHubUrlAuto(),
                 type: "generated",
                 subject: "Data Mining & Knowledge Discovery",
                 text: `If a dataset has ${totalExamples} examples with ${positiveClasses} positive and ${negativeClasses} negative classes, what is the entropy? (Answer rounded to 2 decimal places)`,
@@ -274,6 +300,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         })(), // citation slide "Entropy H(T)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is a benefit of using the Information Gain Ratio criterion?",
@@ -283,6 +310,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Attribute Selection in Decision Trees using Information Gain (5)"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "The entropy of a dataset with equally likely outcomes is always 0.",
@@ -291,6 +319,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
         }, // citation slide "Entropy for Two Outcomes"
         {
             id: `dm-${++n}`,
+            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which of the following is NOT a common attribute selection criterion in decision trees?",
