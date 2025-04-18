@@ -46,7 +46,7 @@ function getCurrentLineNumber(): number | undefined {
     }
 }
 
-function getFileInfoFromError(): { filename?: string; dirname?: string } {
+function getFileInfoFromError(): { pathname?: string } {
     const err = new Error();
     const stackLines = err.stack?.split('\n');
 
@@ -62,11 +62,8 @@ function getFileInfoFromError(): { filename?: string; dirname?: string } {
 
 export function generateGitHubUrlAuto(): string {
     const repoUrl = "https://github.com/EhGALAN/ExamBuddy";
-    if (!repoUrl) throw new Error('GITHUB_REPO_URL not set in .env');
 
     const { pathname } = getFileInfoFromError();
-    console.log(pathname);
-    if (!pathname) throw new Error('Could not extract filename from error stack');
 
     const commitHash = __COMMIT_HASH__;
     const lineNumber = getCurrentLineNumber();

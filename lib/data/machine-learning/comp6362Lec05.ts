@@ -1,6 +1,5 @@
 import {Question} from "../../types";
 import {generateGitHubUrlAuto} from "@/lib/utils.ts";
-import {generateGitHubUrlAuto} from "@/lib/utils.ts";
 
 export const questions: (n: number) => Question[] = (n: number) => {
     return [
