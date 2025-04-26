@@ -57,17 +57,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
                 correctAnswer: prediction,
                 explanation: `According to the decision tree, if Salary is '${salary}' and Age is ${age}, the predicted class is '${prediction}'.`,
             };
-        })(), // citation slide "Decision Tree Structure - example"
-        {
-            id: `dm-${++n}`,
-            report: generateGitHubUrlAuto(),
-            type: "multiple-choice",
-            subject: "Data Mining & Knowledge Discovery",
-            text: "What is the classification rule for examples with 'Salary' = 'high'?",
-            options: ["Buy = 'no'", "Buy = 'yes'", "Buy = 'maybe'", "Buy = 'unknown'"],
-            correctAnswer: "Buy = 'yes'",
-            explanation: "The rule states that if 'Salary' is 'high', then 'Buy' is 'yes'.",
-        }, // citation slide "Classification Rules - example"
+        })(), // citation slide "Decision Tree Structure"
         {
             id: `dm-${++n}`,
             report: generateGitHubUrlAuto(),
