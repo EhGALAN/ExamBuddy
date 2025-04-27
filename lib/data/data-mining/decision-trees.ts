@@ -6,16 +6,6 @@ export const questions: (n: number) => Question[] = (n: number) => {
         {
             id: `dm-${++n}`,
             report: generateGitHubUrlAuto(),
-            type: "multiple-choice",
-            subject: "Data Mining & Knowledge Discovery",
-            text: "What is the class attribute in the provided training set for classification?",
-            options: ["Age", "Position", "Salary", "Buy"],
-            correctAnswer: "Buy",
-            explanation: "The class attribute is the target variable that the decision tree aims to predict.",
-        }, // citation slide "Training Set for Classification: a very simple example"
-        {
-            id: `dm-${++n}`,
-            report: generateGitHubUrlAuto(),
             type: "true-false",
             subject: "Data Mining & Knowledge Discovery",
             text: "In a decision tree, leaf nodes represent predictor attributes.",
