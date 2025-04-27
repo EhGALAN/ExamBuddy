@@ -82,7 +82,7 @@ export const questions: (n: number) => Question[] = (n: number) => {
                 subject: "Data Mining & Knowledge Discovery",
                 text: "What is the median value in the bin ?",
                 variables: {
-                    "Bin values": bin.join(", "),
+                    "Bin values": bin,
                 },
                 correctAnswer: median,
             }

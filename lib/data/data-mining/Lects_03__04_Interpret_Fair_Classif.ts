@@ -64,20 +64,6 @@ export const questions: (n: number) => Question[] = (n: number) => {
         {
             id: `dm-${++n}`,
             report: generateGitHubUrlAuto(),
-            type: "generated",
-            subject: "Data Mining & Knowledge Discovery",
-            text: "Convert the following decision tree path into an IF-THEN rule: Salary = 'medium', Age ≤ 25, Buy = 'yes'.",
-            variables: {
-                "Salary": "medium",
-                "Age": "≤ 25",
-                "Buy": "yes",
-            },
-            correctAnswer: "IF (Salary = 'medium' AND Age ≤ 25) THEN (Buy = 'yes')",
-            explanation: "Each path from the root to a leaf in a decision tree represents a rule.",
-        }, // citation slide Converting a decision tree into a rule set
-        {
-            id: `dm-${++n}`,
-            report: generateGitHubUrlAuto(),
             type: "multiple-choice",
             subject: "Data Mining & Knowledge Discovery",
             text: "Which attribute is most important for predicting 'good' or 'bad' credit in the given decision tree?",
